@@ -2,6 +2,7 @@
 				<div class="contenido">
           <div class="clearfix"> 
             <?php
+            /*$pd_home_section_1  = get_option( 'pd_home_section_1' );*/
             $br_home_note_1  = get_option( 'pd_home_note_1' );
             $br_home_note_2  = get_option( 'pd_home_note_2' );
             $br_home_note_3  = get_option( 'pd_home_note_3' );
@@ -30,6 +31,7 @@
                       $img = wp_get_attachment_image_src( get_post_thumbnail_id($br_home_note_2), 'nota-small' ); 
                   ?>
                   <img src="<?php echo $img[0]; ?>" alt="#">
+                  <div class="category"><span>Categoría</span></div>
                   <p class="elipseme"> <?php echo get_the_title($br_home_note_2); ?></p>
                 </a>
               </div>
@@ -39,27 +41,21 @@
                       $img = wp_get_attachment_image_src( get_post_thumbnail_id($br_home_note_3), 'nota-small' ); 
                   ?>
                   <img src="<?php echo $img[0]; ?>" alt="#">
+                  <div class="category"><span>Categoría</span></div>
                   <p class="elipseme"> <?php echo get_the_title($br_home_note_3); ?></p>
                 </a>
               </div>
-              <div class="principales hlpr-mr">
+              <div class="principales">
                 <a href="<?php echo get_permalink( $br_home_note_4 ); ?>">
                   <?php
                       $img = wp_get_attachment_image_src( get_post_thumbnail_id($br_home_note_4), 'nota-small' ); 
                   ?>
                   <img src="<?php echo $img[0]; ?>" alt="#">
+                  <div class="category"><span>Categoría</span></div>
                   <p class="elipseme"> <?php echo get_the_title($br_home_note_4); ?></p>
                 </a>
               </div>
-              <div class="principales">
-                <a href="<?php echo get_permalink( $br_home_note_5 ); ?>">
-                  <?php
-                      $img = wp_get_attachment_image_src( get_post_thumbnail_id($br_home_note_5), 'nota-small' ); 
-                  ?>
-                  <img src="<?php echo $img[0]; ?>" alt="#">
-                  <p class="elipseme"> <?php echo get_the_title($br_home_note_5); ?></p>
-                </a>
-              </div>
+              
             </div>
             <?php /*Otra fila:*/ ?>
             <div class="clearfix">
@@ -69,6 +65,7 @@
                       $img = wp_get_attachment_image_src( get_post_thumbnail_id($br_home_note_6), 'nota-small' ); 
                   ?>
                   <img src="<?php echo $img[0]; ?>" alt="#">
+                  <div class="category"><span>Categoría</span></div>
                   <p class="elipseme"> <?php echo get_the_title($br_home_note_6); ?></p>
                 </a>
               </div>
@@ -78,27 +75,21 @@
                       $img = wp_get_attachment_image_src( get_post_thumbnail_id($br_home_note_7), 'nota-small' ); 
                   ?>
                   <img src="<?php echo $img[0]; ?>" alt="#">
+                  <div class="category"><span>Categoría</span></div>
                   <p class="elipseme"> <?php echo get_the_title($br_home_note_7); ?></p>
                 </a>
               </div>
-              <div class="principales hlpr-mr">
+              <div class="principales ">
                 <a href="<?php echo get_permalink( $br_home_note_8 ); ?>">
                   <?php
                       $img = wp_get_attachment_image_src( get_post_thumbnail_id($br_home_note_8), 'nota-small' ); 
                   ?>
                   <img src="<?php echo $img[0]; ?>" alt="#">
+                  <div class="category"><span>Categoría</span></div>
                   <p class="elipseme"> <?php echo get_the_title($br_home_note_8); ?></p>
                 </a>
               </div>
-              <div class="principales">
-                <a href="<?php echo get_permalink( $br_home_note_9 ); ?>">
-                  <?php
-                      $img = wp_get_attachment_image_src( get_post_thumbnail_id($br_home_note_9), 'nota-small' ); 
-                  ?>
-                  <img src="<?php echo $img[0]; ?>" alt="#">
-                  <p class="elipseme"> <?php echo get_the_title($br_home_note_9); ?></p>
-                </a>
-              </div>
+              
             </div>
             <div class="clearfix">
               <div class="medium-banner">

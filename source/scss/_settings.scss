@@ -12,15 +12,10 @@
 	margin: 0;
 	padding: 0;
 }
-#fbcomments, .fb-comments, .fb-comments iframe[style], .fb-comments span, .fbFeedbackContent {
-width: 100% !important;
-}
+
 .wrapper {
 	width: 90%;
 	margin: 0 auto;
-	/* Opacidad de fondo (con fallback): */
-	/* background: rgba(0,0,0,0.5);
-	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#4c000000', endColorstr='#4c000000'); */
 }
 
 /**
@@ -29,8 +24,8 @@ width: 100% !important;
 /* ====================
 */
 $elGris: #636450;
-$elVerde: #70B52E;
-$elAmarillo: #feca17;
+$elVerde: #004d5a; /*para deportes*/
+$elAmarillo: #004d5a; /*#feca17;*/
 $elAzul: #2e4c8f;
-$elAzulClaro: #3c91cf;
-$elRojo: #dd3b30;
+$elAzulClaro: #19a39f; /*para deportes*/
+$elRojo: #004d5a; /* #dd3b30;*/

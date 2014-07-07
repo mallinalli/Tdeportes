@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="es"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -59,11 +59,13 @@
           </div>
           <ul class="navegacion">
             <li><a href="<?php echo home_url(); ?>">Inicio</a></li>
-            <li><a href="<?php echo home_url(); ?>/noticias">Noticias</a></li>
-            <li><a href="<?php echo home_url(); ?>/seleccion-nacional">Selección Nacional</a></li>
+            <li><a href="<?php echo home_url(); ?>/futbol">Fútbol</a></li>
+            <li><a href="<?php echo home_url(); ?>/beisbol">Béisbol</a></li>
+            <li><a href="<?php echo home_url(); ?>/local">Local</a></li>
             <li class="spacer"></li>
+            <li><a href="<?php echo home_url(); ?>/otros-deportes">Otros Deportes</a></li>
             <li><a href="<?php echo home_url(); ?>/calendario">Calendario</a></li>
-            <li><a href="<?php echo home_url(); ?>/infografias">Infografías</a></li>
+            <li><a href="<?php echo home_url(); ?>/infografias">Chica del día</a></li>
           </ul>
         </div>
       </header>
