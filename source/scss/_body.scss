@@ -1,0 +1,769 @@
+body {
+  font-family: 'Quattrocento Sans', sans-serif;
+  color: $elGris; /*gris*/
+  background: url(../img/bg2.jpg) no-repeat center center fixed;
+  @include background-size (cover);
+} 
+
+
+h2{
+	font-size: 26px;
+}
+
+h3{
+	font-size: 22px;
+}
+
+ul{ 
+	padding: 0;
+	margin: 0;
+}
+
+.main-header {
+	margin-bottom: 10px;
+}
+
+.logo{
+	img{
+		width: 100%;
+	  	max-width: 1024px;
+	  	height: auto;
+	  	margin: 0 auto;
+	  	display: inherit;
+	}
+}
+
+.contenedor{
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.menu{
+	font-weight: bold;
+	text-align: center;
+	background: $elVerde;
+	padding: 5px;
+	display: inherit;
+	@include border-radius(4px);
+	a{
+		color: #fff;
+	}
+	.navhead {
+		display:block;
+		font-size: 17px;
+		font-weight: bold;
+		padding: 5px;
+		a:hover{
+			text-decoration: none;
+		}
+		.menubutton{
+			float: left;
+		}
+	}
+	.navegacion{
+		margin-bottom: 0; 
+		display: none;
+		.spacer {
+			display: none;
+		}
+		li{
+			text-decoration: none;
+			list-style: none;
+			display: block;
+			padding: 0.8em 2em;
+			border-top: 1px solid #fff;
+			a {
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+.contenido{
+	margin: 0 auto;
+	width: 100%;
+	background: #fff;
+	border-radius: 3px;
+	@include box-sizing(border-box);
+}
+.top-banner{
+	width: 99%;
+	margin: 0 0.5% 10px 0.5%;
+}
+.banner-info{
+	width: 66.3%;
+	float: left;
+	img{
+		width: 100%;
+		height: auto;
+	}
+}
+.banner-comp{
+	width: 32.7%;
+	float: left;
+	margin: 0 0 0 1%;
+	img{
+		width: 100%;
+		height: auto;
+	}
+}
+
+.small-banner, .medium-banner, .xsmall-banner {
+	margin: 5px 0;
+}
+
+.top-banner, .aside-banner, .small-banner, .medium-banner, .xsmall-banner {
+	img{
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+		max-width: 1024px;
+		display: block;
+	}
+}
+
+/* ==========================
+	Componente de video
+   ========================== */
+.video-components {
+	display: block;
+}
+.desk-home-video-component {
+	display: none;
+}
+
+.principal, .principales, .nota, .nota-s {
+	margin-bottom: 10px;
+	a {
+		text-decoration: none;
+	}
+}
+.principal{
+	width: 100%;
+	background: $elGris;
+	img{
+		float: left;
+		width: 100%;
+	}
+	p{
+		color: #fff;
+		float: left;
+		width: 100%;
+		margin: 0;
+		padding: 7px;
+		font-size: 18px;
+		@include box-sizing(border-box);
+	}
+}
+.principales{
+	width: 49%;
+	float: left;
+	background: $elGris;
+	img{
+		width: 100%;
+	}
+	p{
+		color: #fff;
+		padding: 5px;
+		height: 50px;
+	}
+	&.hlpr-mr {
+		margin-right: 2%;
+	}
+}
+.section-header {
+	margin-top: 0;
+	font-weight: bold;
+}
+.nota{
+	width: 32.6%;
+	float: left;
+	display: inline-block;
+	h2{
+		background: $elGris;
+		color: #fff;
+		font-size: 14px;
+		font-family: 'Quattrocento Sans', sans-serif;
+		font-weight: bold;
+		margin: 0;
+		padding: 5px;
+	}
+	img{
+		width: 100%;
+	}
+	&.hlpr-mr {
+		margin-right: 1.1%;
+	}
+}
+ .nota-s{
+ 	margin: 10px 0;
+ 	padding: 0 10px;
+ 	width: 100%;
+ 	a{ @extend %link-reset; }
+ 	img{
+ 		float: left;
+ 		width: 30%;
+ 	}
+ 	.nota-r{
+ 		float: right;
+ 		width: 65%;
+ 		font-size: 18px;
+ 	}
+ }
+ .news-title{
+ 	font-weight: bold;
+ 	font-size: 18px;
+ }
+ .news-des{
+ 	font-size: 16px;
+ }
+ .day{
+ 	font-size: 18px;
+ 	font-weight: bold;
+ 	cursor: pointer;
+ 	i {
+ 		font-size: 20px;
+ 		margin-right: 5px;
+ 	}
+ }
+ .day-block {
+ 	display: none;
+ }
+.date{
+	float: right;
+	font-size: 14px;
+	font-family: 'Quattrocento Sans', sans-serif;
+  	color: $elGris;
+}
+/**
+/* Botón de Compartir
+*/
+.the-share {
+	margin: -10px 0 13px auto;
+}
+.nota-completa{
+	img{
+		width: 100%;
+		float: left;
+	}
+	.img-nota{
+		width: 90%;
+		float: left;
+		margin: 0 10px 10px 0;
+	}
+	/* .cuerpo-nota{
+		width: 75%; 
+		float: right;
+		text-align: justify;
+		padding: 0 15px;
+	} */
+	.related-nota{
+		float: left;
+		width: 30%;
+	}
+	.zona-balazo{
+		text-align: center;
+		display: inline-block;
+		width: 70%;
+	}
+	.cuerponota{
+		font-size: 16.5px;
+		font-family: 'Quatroccento', serif;
+		
+		img {
+			max-width: 100%;
+			max-height: auto;
+		}
+	}
+	.source {
+		font-size: 13px;
+		margin-top: 0;
+	}
+}
+/* Para videos responsivos de youtube */
+.ytvideo {
+	display: inline-block;
+	width: 60%;
+	position: relative;
+	/* padding-bottom: 56.25%; */ /* 16:9 */
+	padding-bottom: 36.25%;
+	padding-top: 25px;
+	height: 0;
+}
+.ytvideo iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.grupo{
+	.cal-grupo{
+		color: #fff;
+		background: $elGris;
+		width: 24%;
+		float: left;
+		margin-bottom: 10px;
+		p{
+			margin: 5px;
+			font-weight: bold;
+		}
+		&.hlpr-mr{
+ 			margin-right: 1.3%;
+ 		}
+		ul{
+			padding: 10px;
+			background: #ccc;
+			color: $elGris;
+			@extend %list-reset;
+			@include box-sizing(border-box);
+			li{
+				margin-top: 3px;
+				img {
+					margin-right: 5px;
+				}
+			}
+		}
+	}
+}
+.calendario{
+	width: 100%;
+	@include user-select(none);
+	.cal-fecha{
+		width: 32%;
+		height: 60px;
+		background: #ccc;
+		color: $elGris;
+		font-size: 18px;
+ 		font-weight: bold;
+ 		float: left;
+ 		padding: 10px 0;
+ 		margin: 5px 0;
+ 		text-align: center;
+ 		cursor: pointer;
+ 		&.hlpr-mr, &.hlpr-mr-t {
+ 			margin-right: 2%;
+ 		}
+	}
+	.cal-selected {
+		background: #fff;
+		color: $elGris
+	}
+	.cal-cont,.removeme {
+		float: left;
+		width: 100%;
+	}
+	.hidden {
+		display: none;
+	}
+	table {
+		width: 80%;
+		margin: 10px auto;
+	}
+	td {
+		padding: 5px 0;
+		text-align: center;
+	}
+}
+.pie-foto{
+	background: none;
+	font-size: 16px;
+}
+
+
+.lateral{
+	width: 100%;
+	margin: 0 auto;
+	.resultados,.audios,.twitter,.foto, .aside-banner {
+		margin-top: 10px;
+	}
+	.complemento{
+		h2, h3{
+			color: #fff;
+			text-align: center;
+			padding: 5px;
+			font-size: 16px;
+			font-weight: bold;
+			font-family: 'Quattrocento Sans', sans-serif;
+			margin: 0;
+		}
+
+	}
+	.widgets1{
+		.cuenta{
+			@include border-radius(3px);
+			float: left;
+			width: 100%;
+			height: 120px;
+		}
+		.resultados{
+			float: left;
+			width: 100%;
+			background: lighten($elRojo,6%); /*rojo claro*/
+			@include border-radius(3px);
+			overflow: hidden;
+			.res-list{
+				background: #fff;
+				ul{
+					list-style: none;
+					text-align: center;
+					li:nth-child(odd) {
+					    background: #ccc;   
+					}
+				}
+			}
+			.res-footer{
+				background: $elRojo; /*rojo*/
+				margin: 0 auto;
+			}
+		}
+	}
+	.widgets2{
+		.twitter{
+			background: $elAzulClaro; /*azul*/
+			@include border-radius(3px);
+			text-align: center;
+			float: left;
+			width: 100%;
+			h2 a {
+				color: #fff;
+				padding: 5px;
+				font-size: 16px;
+				font-weight: bold;
+				margin: 3px 0;
+				text-decoration: none;
+				i {
+					font-size: 20px;
+				}
+			}
+		}
+	}
+	.widgets3{
+		.foto{
+			float: left;
+			width: 100%;
+			.foto-head, .foto-footer{
+				background: $elVerde;
+				@include border-radius(3px);
+				h2{
+					margin-top: 0;
+				}
+			}
+		}
+	}
+	.aside-banner{
+		float: left;
+		width: 100%;
+	}
+}
+
+.cuenta {
+	color: #fff;
+	padding: 10px;
+	font-size: 11px;
+	background: #000 url(../img/gew.png) no-repeat right;
+	@include box-sizing(border-box);
+	@include background-size(auto 100%);
+	@include text-shadow(0 0 3px #000);
+	position: relative;
+	a {
+		position: absolute;
+		text-indent: -9999px;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+	.count-num {
+		float: left;
+		width: 15%;
+		text-align: center;
+		span {
+			font-size: 30px;
+			display: block;
+			line-height: 100%;
+		}
+	}
+	.count-title, .count-foot {
+		display: block;
+	}
+	.count-title {
+		font-size: 18px;
+		font-weight: bold;
+	}
+	.count-foot {
+		font-size: 16px;
+	}
+}
+
+.tweets-container, .audio-list {
+	max-height: 250px;
+	overflow: auto;
+}
+
+.tweets-container {
+	.single-tweet {
+		font-size: 12px;
+		color: darken($elAzulClaro,30%);
+		background: #fff;
+		border-bottom: 1px solid lighten($elAzulClaro,25%); 
+		@include box-sizing(border-box);
+		padding: 3px 5px;
+		margin: 0 3px;
+		a {
+			color: $elAzulClaro;
+			@extend %link-reset;
+			&:hover {
+				color: darken($elAzulClaro,20%);
+			}
+		}
+	}
+}
+.moretweets {
+	color: #fff;
+	display: inline-block;
+	&:hover {
+		color: #ddd;
+	}
+}
+
+/* =========================
+	Componente de Audio
+========================= */
+.audios{
+	float: left;
+	width: 100%;
+	@include user-select(none);
+	background: $elAmarillo;
+	@include border-radius(3px);
+}
+.aud-head {
+	vertical-align: bottom;
+}
+.audio-list {
+	@include box-sizing(border-box);
+	padding: 3px 5px 3px 10px;
+	margin: 0 3px;
+	background: #fff;
+}
+.all_container {
+  margin: 50px auto;
+}
+.trackname {
+	font-size: 12px;
+}
+.play_cont, .audio_wrapper {
+  float: left;
+}
+.play_cont {
+  border: none;
+  width: 10%;
+  margin-right: 5%;
+  a {
+    color: #fff;
+    display: inline-block;
+	text-decoration: none;
+    padding: 2px 7px;
+    background: darken($elAmarillo,10%);
+    @include border-radius(15px);
+	@include box-sizing(border-box);
+    &:hover {
+      
+    }
+  }
+}
+.audio_wrapper {
+	cursor: pointer;
+	@include border-radius(25px);
+	width: 80%;
+	padding: 15px 10px;
+	@include box-sizing(border-box);
+}
+.audio_container {
+	height: 1px;
+	background: $elGris;
+	position: relative;
+}
+.audio_thingie {
+	height: 10px;
+	width: 10px;
+	background: darken($elGris,10%);
+	position: absolute;
+	top: -5px;
+	left: -5px;
+	@include transition(border-radius 0.3s);
+	@include border-radius(5px);
+	&:hover {
+  		@include border-radius(0);
+  	}
+}
+.mastracks {
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+}
+
+/* ========================= */
+
+
+.jcarousel {
+  width: 100%;
+  white-space:nowrap;
+  overflow: hidden;
+  position: relative;
+  @include user-select(none);
+}
+
+.jcarcontrol {
+  position: absolute;
+  cursor: pointer;
+  height: 100%;
+  background: rgba(255,255,255,0.7);
+  width: 15%;
+  opacity: 0.3;
+  @include transition(opacity 0.5s);
+  text-align: center;
+  &:hover {
+  	opacity: 1;
+  }
+  span {
+  	font-size: 25px;
+  }
+  /* The ghost, nudged to maintain perfect centering */
+  span:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em; /* Adjusts for spacing */
+    /* The item to align */
+    i {
+      display: inline-block;
+      vertical-align: middle;
+      width: 300px;
+    }
+  }
+}
+
+#der {
+  right: 0;
+}
+
+.jcaritem {
+  display: inline-block;
+}
+
+
+.infografias{
+	width: 100%;
+	position: relative;
+	.info{
+		background: #ccc;
+		margin: 5px 0.75%;
+		float: left;
+		overflow: hidden;
+		a {
+			width: 100%;
+			height: 100%;
+			display: inline-block;
+			@include background-size(fill);
+		}
+		img {
+			width: 100%;
+		}
+	}
+	.large{
+		width: 48%;
+		height: auto;
+
+	}
+	.medium{
+		width: 63.5%;
+		height: 137px;
+	}
+	.small{
+		width: 31%;
+		height: 137px;
+	}
+}
+.pie{
+	background: $elGris;
+	color: #fff;
+	font-size: 12px;
+	margin-top: 10px;
+	width: 100%;
+	padding-top: 10px;
+	p{
+		width: 100%;
+		text-align: center;
+	}
+	.logos{
+		text-align: justify;
+		line-height: 90%;
+		&:after, &:before {
+			content: '';
+			display: inline-block;
+			width: 100%;
+		}
+	}
+	.hlpr-logo {
+		content: '';
+		display: none;
+		width: 100%;
+	}
+	#tribuna, #indetta, #exa, #lamejor, #periodico, #canalpuebla, #radio{
+		background: url('../img/logos.png') no-repeat;
+		width: 119px;
+		height: 75px;
+		display: inline-block;
+		margin: 10px 0; 
+	}
+	#tribuna{
+		background-position: 12px 0;
+		display: block;
+		margin: 0 auto;
+	}
+	#indetta{
+		background-position: -120px 0;
+	}
+	#exa{
+		background-position: -250px 0;
+	}
+	#lamejor{
+		background-position: -385px 0;
+	}
+	#periodico{
+		background-position: -516px 0;
+	}
+	#canalpuebla{
+		background-position: -649px 0;
+	}
+	#radio{
+		background-position: -780px 0;
+	}
+
+}
+
+.share {
+	text-align: right;
+	ul {
+		@include border-radius(3px 3px 0 0);
+		behavior: url(plugins/PIE.htc);
+		overflow: hidden;
+		display: inline-block;
+		margin-bottom: -6px;
+		@extend %list-reset;
+		li {
+			display: inline-block;
+			cursor: pointer;
+			padding: 7px 15px;
+			color: #fff;
+			font-size: 18px;
+			&.stw { background: #55acee; }
+			&.sfb { background: #3b5998; text-align: center; i { padding: 0 5px; } }
+			&.sgp { background: #dd4b39; }
+		}
+	}
+}
