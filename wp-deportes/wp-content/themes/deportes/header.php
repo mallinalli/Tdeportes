@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="es"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -59,32 +59,17 @@
           </div>
           <ul class="navegacion">
             <li><a href="<?php echo home_url(); ?>">Inicio</a></li>
-            <li><a href="<?php echo home_url(); ?>/noticias">Noticias</a></li>
-            <li><a href="<?php echo home_url(); ?>/seleccion-nacional">Selección Nacional</a></li>
+            <li><a href="<?php echo home_url(); ?>/futbol">Fútbol</a></li>
+            <li><a href="<?php echo home_url(); ?>/beisbol">Béisbol</a></li>
+            <li><a href="<?php echo home_url(); ?>/local">Local</a></li>
             <li class="spacer"></li>
+            <li><a href="<?php echo home_url(); ?>/otros-deportes">Otros Deportes</a></li>
             <li><a href="<?php echo home_url(); ?>/calendario">Calendario</a></li>
-            <li><a href="<?php echo home_url(); ?>/infografias">Infografías</a></li>
+            <li><a href="<?php echo home_url(); ?>/infografias">Chica del día</a></li>
           </ul>
         </div>
       </header>
       <div class="contenedor clearfix">
         <div class="top-banner">
-          <!--/* Revive Adserver Javascript Tag v3.0.4 */-->
-
-          <script type='text/javascript'><!--//<![CDATA[
-             var m3_u = (location.protocol=='https:'?'https://www.bnrspd.dreamhosters.com/revive/www/delivery/ajs.php':'http://www.bnrspd.dreamhosters.com/revive/www/delivery/ajs.php');
-             var m3_r = Math.floor(Math.random()*99999999999);
-             if (!document.MAX_used) document.MAX_used = ',';
-             document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
-             document.write ("?zoneid=22");
-             document.write ('&amp;cb=' + m3_r);
-             if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
-             document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
-             document.write ("&amp;loc=" + escape(window.location));
-             if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
-             if (document.context) document.write ("&context=" + escape(document.context));
-             if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
-             document.write ("'><\/scr"+"ipt>");
-          //]]>--></script><noscript><a href='http://www.bnrspd.dreamhosters.com/revive/www/delivery/ck.php?n=a4372a8c&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='http://www.bnrspd.dreamhosters.com/revive/www/delivery/avw.php?zoneid=22&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a4372a8c' border='0' alt='' /></a></noscript>
-
+          <img src="<?php echo get_template_directory_uri(); ?>/img/banners/banner.jpg">
         </div>

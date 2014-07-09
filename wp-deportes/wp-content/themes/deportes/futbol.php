@@ -1,12 +1,12 @@
 <?php
 /*
-Template Name: seleccionPage
+Template Name: futbolPage
 */
 ?>
 <?php get_header(); ?>
 <div class="contenido">
   <div class="clearfix">
-  	<h2 class="section-header">Selección Nacional</h2>
+  	<h2 class="section-header">Fútbol</h2>
     <?php
       $br_seleccion_note_1  = get_option( 'pd_seleccion_note_1' );
       $br_seleccion_note_2  = get_option( 'pd_seleccion_note_2' );

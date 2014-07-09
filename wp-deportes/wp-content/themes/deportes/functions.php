@@ -111,7 +111,7 @@ function pd_home_register_settings(){
    				array(
    					'taxonomy' => 'category',
    					'field' => 'slug',
-   					'terms' => 'seleccion-nacional',
+   					'terms' => 'seleccion-nacional', //aquí hay algo!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    					'operator' => 'IN'
    				) )
    	);
