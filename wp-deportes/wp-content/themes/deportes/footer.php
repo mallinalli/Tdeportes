@@ -44,7 +44,7 @@
               <div class="res-list">
                 <ul>
                   <?php
-                  $args = array( 'numberposts' => '3', 'post_type' => 'resultado', 'post_status' => 'publish' );
+                  $args = array( 'numberposts' => '10', 'post_type' => 'resultado', 'post_status' => 'publish' );
                   $resultados = wp_get_recent_posts( $args );
                   foreach( $resultados as $resultado ){
                   ?>
@@ -56,7 +56,25 @@
               </div>
               <h3 class="res-footer">  </h3>
             </div>
-            
+            <div class="aside-banner">
+                <!--/* Revive Adserver Javascript Tag v3.0.4 */-->
+
+                <script type='text/javascript'><!--//<![CDATA[
+                   var m3_u = (location.protocol=='https:'?'https://www.bnrspd.dreamhosters.com/revive/www/delivery/ajs.php':'http://www.bnrspd.dreamhosters.com/revive/www/delivery/ajs.php');
+                   var m3_r = Math.floor(Math.random()*99999999999);
+                   if (!document.MAX_used) document.MAX_used = ',';
+                   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+                   document.write ("?zoneid=29");
+                   document.write ('&amp;cb=' + m3_r);
+                   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+                   document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+                   document.write ("&amp;loc=" + escape(window.location));
+                   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+                   if (document.context) document.write ("&context=" + escape(document.context));
+                   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+                   document.write ("'><\/scr"+"ipt>");
+                //]]>--></script><noscript><a href='http://www.bnrspd.dreamhosters.com/revive/www/delivery/ck.php?n=a6c18448&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='http://www.bnrspd.dreamhosters.com/revive/www/delivery/avw.php?zoneid=29&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a6c18448' border='0' alt='' /></a></noscript>
+              </div>
           </div>
           <div class="widgets2 clearfix">
             <div class="complemento twitter hlpr-mr">
@@ -70,6 +88,7 @@
               </div>
               <a href="#" class="moretweets">Más...</a>
             </div>
+            
             <div class="complemento audios">
               <h2 class="aud-head">Audios <a href="https://soundcloud.com/tribuna-deportes-oficial"><img src="<?php echo get_template_directory_uri(); ?>/img/propietary/soundcloud.png"></a></h2>
               <div class="audio-list">
@@ -122,25 +141,7 @@
                  document.write ("'><\/scr"+"ipt>");
               //]]>--></script><noscript><a href='http://www.bnrspd.dreamhosters.com/revive/www/delivery/ck.php?n=aa7f9070&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='http://www.bnrspd.dreamhosters.com/revive/www/delivery/avw.php?zoneid=28&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=aa7f9070' border='0' alt='' /></a></noscript>
               </div>
-              <div class="aside-banner">
-                <!--/* Revive Adserver Javascript Tag v3.0.4 */-->
-
-                <script type='text/javascript'><!--//<![CDATA[
-                   var m3_u = (location.protocol=='https:'?'https://www.bnrspd.dreamhosters.com/revive/www/delivery/ajs.php':'http://www.bnrspd.dreamhosters.com/revive/www/delivery/ajs.php');
-                   var m3_r = Math.floor(Math.random()*99999999999);
-                   if (!document.MAX_used) document.MAX_used = ',';
-                   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
-                   document.write ("?zoneid=29");
-                   document.write ('&amp;cb=' + m3_r);
-                   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
-                   document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
-                   document.write ("&amp;loc=" + escape(window.location));
-                   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
-                   if (document.context) document.write ("&context=" + escape(document.context));
-                   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
-                   document.write ("'><\/scr"+"ipt>");
-                //]]>--></script><noscript><a href='http://www.bnrspd.dreamhosters.com/revive/www/delivery/ck.php?n=a6c18448&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='http://www.bnrspd.dreamhosters.com/revive/www/delivery/avw.php?zoneid=29&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a6c18448' border='0' alt='' /></a></noscript>
-              </div>
+              
             </div>
           </div>
         </aside>
