@@ -779,3 +779,52 @@ ul{
 		}
 	}
 }
+
+.pagination {
+  margin: 20px 0;
+  overflow: hidden;
+  position: relative;
+  ul, ol {
+  	@extend %list-reset;
+  }
+  li {
+    float: left;
+  }
+  ul {
+    float: left;
+    left: 50%;
+    position: relative;
+    > li {
+      left: -50%;
+      position: relative;
+    }
+  }
+  li {
+    a {
+      transition: all 100ms ease-in-out 0s;
+      background-color: lighten($elGris,50%);
+      border-radius: 5px 5px 5px 5px;
+      color: #69696E;
+      display: block;
+      font: 12px / 30px Arial, sans-serif;
+      height: 30px;
+      margin: 0 3px;
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      width: 30px;
+      &:hover {
+        background-color: $elVerde;
+        color: #fff;
+      }
+    }
+    &.active a {
+      background-color: $elVerde;
+      color: #fff;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}

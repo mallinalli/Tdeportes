@@ -2,11 +2,11 @@
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /Github/Tdeportes/wp-deportes/
+RewriteBase /GitHub/Tdeportes/wp-deportes/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /Github/Tdeportes/wp-deportes/index.php [L]
+RewriteRule . /GitHub/Tdeportes/wp-deportes/index.php [L]
 </IfModule>
 
 # END WordPress
