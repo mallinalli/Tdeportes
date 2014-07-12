@@ -4,16 +4,17 @@
             <?php
             /*$pd_home_section_1  = get_option( 'pd_home_section_1' );*/
             $br_home_note_1  = get_option( 'pd_home_note_1' );
-            $br_home_note_2  = get_option( 'pd_home_note_2' );
-            $br_home_note_3  = get_option( 'pd_home_note_3' );
-            $br_home_note_4  = get_option( 'pd_home_note_4' );
-            $br_home_note_5  = get_option( 'pd_home_note_5' );
-            /*Extra*/
-            $br_home_note_6  = get_option( 'pd_home_note_6' );
-            $br_home_note_7  = get_option( 'pd_home_note_7' );
+
+            $notas = array(
             
+            $br_home_note_2  = get_option( 'pd_home_note_2' ),
+            $br_home_note_3  = get_option( 'pd_home_note_3' ),
+            $br_home_note_4  = get_option( 'pd_home_note_4' ),
+            $br_home_note_5  = get_option( 'pd_home_note_5' ),
+            $br_home_note_6  = get_option( 'pd_home_note_6' ),
+            $br_home_note_7  = get_option( 'pd_home_note_7' )
             
-            
+            );
             ?>           
             <div class="principal clearfix">
               <a href="<?php echo get_permalink( $br_home_note_1 ); ?>">
@@ -24,17 +25,42 @@
                 <p> <?php echo get_the_title($br_home_note_1); ?></p>
               </a>
             </div>
+            <?php
+            $limite = count($notas)/3 ;
+
+            $contador = 0;
+
+            for ($i=0; $i < $limite; $i++) {
+            ?>
+            <!--Renglón === Bear In Mind: "hlpr-mr" "hlpr-mr-t" === -->
             <div class="clearfix">
-              <div class="principales hlpr-mr">
-                <a href="<?php echo get_permalink( $br_home_note_2 ); ?>">
+              <?php 
+
+              for ($j=0; $j < 3; $j++) { 
+                switch ($j) {
+                  case '0':
+                    $helper = 'hlpr-mr';
+                    break;
+                  
+                  case '1':
+                    $helper = 'hlpr-mr-t';
+                    break;
+
+                  case '2':
+                    $helper = '';
+                    break;
+                }
+              ?>
+              <div class="principales <?php echo $helper; ?>">
+                <a href="<?php echo get_permalink( $notas[$j+$contador] ); ?>">
                   <?php
-                      $img = wp_get_attachment_image_src( get_post_thumbnail_id($br_home_note_2), 'nota-small' ); 
+                      $img = wp_get_attachment_image_src( get_post_thumbnail_id($notas[$j+$contador]), 'nota-small' ); 
                   ?>
                   <img src="<?php echo $img[0]; ?>" alt="#">
                   <div class="category"><span>
                     <?php 
 
-                      $post_categories = wp_get_post_categories( $br_home_note_2 );
+                      $post_categories = wp_get_post_categories( $notas[$j+$contador] );
                       $cats = array();
                         
                       foreach($post_categories as $c){
@@ -51,66 +77,17 @@
 
                     ?> 
                     </span></div>
-                  <p class="elipseme"> <?php echo get_the_title($br_home_note_2); ?></p>
+                  <p class="elipseme"> <?php echo get_the_title($notas[$j+$contador]); ?></p>
                 </a>
               </div>
-              <div class="principales hlpr-mr-t">
-                <a href="<?php echo get_permalink( $br_home_note_3 ); ?>">
-                  <?php
-                      $img = wp_get_attachment_image_src( get_post_thumbnail_id($br_home_note_3), 'nota-small' ); 
-                  ?>
-                  <img src="<?php echo $img[0]; ?>" alt="#">
-                  <div class="category"><span>Categoría</span></div>
-                  <p class="elipseme"> <?php echo get_the_title($br_home_note_3); ?></p>
-                </a>
-              </div>
-              <div class="principales">
-                <a href="<?php echo get_permalink( $br_home_note_4 ); ?>">
-                  <?php
-                      $img = wp_get_attachment_image_src( get_post_thumbnail_id($br_home_note_4), 'nota-small' ); 
-                  ?>
-                  <img src="<?php echo $img[0]; ?>" alt="#">
-                  <div class="category"><span>Categoría</span></div>
-                  <p class="elipseme"> <?php echo get_the_title($br_home_note_4); ?></p>
-                </a>
-              </div>
-              
+              <?php } ?>
             </div>
-            <?php /*Otra fila:*/ ?>
-            <div class="clearfix">
-              <div class="principales hlpr-mr">
-                <a href="<?php echo get_permalink( $br_home_note_6 ); ?>">
-                  <?php
-                      $img = wp_get_attachment_image_src( get_post_thumbnail_id($br_home_note_6), 'nota-small' ); 
-                  ?>
-                  <img src="<?php echo $img[0]; ?>" alt="#">
-                  <div class="category"><span>Categoría</span></div>
-                  <p class="elipseme"> <?php echo get_the_title($br_home_note_6); ?></p>
-                </a>
-              </div>
-              <div class="principales hlpr-mr-t">
-                <a href="<?php echo get_permalink( $br_home_note_7 ); ?>">
-                  <?php
-                      $img = wp_get_attachment_image_src( get_post_thumbnail_id($br_home_note_7), 'nota-small' ); 
-                  ?>
-                  <img src="<?php echo $img[0]; ?>" alt="#">
-                  <div class="category"><span>Categoría</span></div>
-                  <p class="elipseme"> <?php echo get_the_title($br_home_note_7); ?></p>
-                </a>
-              </div>
-              <div class="principales ">
-                <a href="<?php echo get_permalink( $br_home_note_8 ); ?>">
-                  <?php
-                      $img = wp_get_attachment_image_src( get_post_thumbnail_id($br_home_note_8), 'nota-small' ); 
-                  ?>
-                  <img src="<?php echo $img[0]; ?>" alt="#">
-                  <div class="category"><span>Categoría</span></div>
-                  <p class="elipseme"> <?php echo get_the_title($br_home_note_8); ?></p>
-                </a>
-              </div>
-              
-            </div>
-            
+
+            <!--Fin de Renglón-->
+            <?php 
+                $contador = $contador+3;
+              } 
+            ?>
           </div>
           <div class="medium-banner">
               <!--/* Revive Adserver Javascript Tag v3.0.4 */-->
