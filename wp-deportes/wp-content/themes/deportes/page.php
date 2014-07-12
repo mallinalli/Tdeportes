@@ -6,7 +6,7 @@ Template Name: deportesPage
 <?php get_header(); ?>
 <div class="contenido">
   <div class="clearfix">
-  	<h2 class="section-header">Fútbol</h2>
+  	<h2 class="section-header"><?php echo get_the_title($ID); ?> </h2>
     <?php
 
     /* Esta parte obtiene los últimos 4 posts de la 
