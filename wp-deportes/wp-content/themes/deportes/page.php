@@ -12,6 +12,8 @@ Template Name: deportesPage
     /* Esta parte obtiene los últimos 4 posts de la 
     categoría de fútbol para que cada div posterior 
     los jale automáticamente*/
+      global $post;
+      $slug = get_post( $post )->post_name;
 
       $displayed = array();
           
@@ -20,7 +22,7 @@ Template Name: deportesPage
                 array(
                   'taxonomy' => 'category',
                   'field' => 'slug',
-                  'terms' => 'futbol',
+                  'terms' => $slug,
                   'operator' => 'IN'
                 ))
                 );
@@ -101,7 +103,7 @@ Template Name: deportesPage
         array(
           'taxonomy' => 'category',
           'field' => 'slug',
-          'terms' => 'futbol',
+          'terms' => $slug,
           'operator' => 'IN'
         ) ) 
       );

@@ -11,9 +11,9 @@
             /*Extra*/
             $br_home_note_6  = get_option( 'pd_home_note_6' );
             $br_home_note_7  = get_option( 'pd_home_note_7' );
-            $br_home_note_8  = get_option( 'pd_home_note_8' );
-            $br_home_note_9  = get_option( 'pd_home_note_9' );
-
+            
+            
+            
             ?>           
             <div class="principal clearfix">
               <a href="<?php echo get_permalink( $br_home_note_1 ); ?>">
@@ -31,7 +31,26 @@
                       $img = wp_get_attachment_image_src( get_post_thumbnail_id($br_home_note_2), 'nota-small' ); 
                   ?>
                   <img src="<?php echo $img[0]; ?>" alt="#">
-                  <div class="category"><span>Categoría</span></div>
+                  <div class="category"><span>
+                    <?php 
+
+                      $post_categories = wp_get_post_categories( $br_home_note_2 );
+                      $cats = array();
+                        
+                      foreach($post_categories as $c){
+                        $cat = get_category( $c );
+                        $cats[] = array( 'name' => $cat->name, 'slug' => $cat->slug );
+                      }
+
+                      if ($cats[0]['name'] == 'Portada' OR $cats[0]['name'] == 'Sin Categoría'){
+                        echo ' ';
+                      } else{
+                        echo $cats[0]['name']; 
+                      }
+                   
+
+                    ?> 
+                    </span></div>
                   <p class="elipseme"> <?php echo get_the_title($br_home_note_2); ?></p>
                 </a>
               </div>
