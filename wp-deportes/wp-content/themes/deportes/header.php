@@ -61,11 +61,11 @@
             <li><a href="<?php echo home_url(); ?>">Inicio</a></li>
             <li><a href="<?php echo home_url(); ?>/futbol">Fútbol</a></li>
             <li><a href="<?php echo home_url(); ?>/beisbol">Béisbol</a></li>
-            <li><a href="<?php echo home_url(); ?>/local">Local</a></li>
             <li class="spacer"></li>
+            <li><a href="<?php echo home_url(); ?>/local">Local</a></li>
             <li><a href="<?php echo home_url(); ?>/otros-deportes">Otros Deportes</a></li>
             <li><a href="<?php echo home_url(); ?>/calendario">Calendario</a></li>
-            <li><a href="<?php echo home_url(); ?>/infografias">Chica del día</a></li>
+            
           </ul>
         </div>
       </header>
