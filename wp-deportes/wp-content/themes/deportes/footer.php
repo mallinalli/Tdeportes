@@ -99,28 +99,27 @@
           </div>
           <div class="widgets3 clearfix">
             <div class="complemento foto">
-              <h2 class="foto-head">Fotos del día</h2>
-              <div>
-                <div class="jcarousel">
-                  <div class="jcarcontrol" id="izq"><span><i class="icon-chevron-left"></i></span></div>
-                  <div class="jcarcontrol" id="der"><span><i class="icon-chevron-right"></i></span></div>
-                  <div class="jcar-cont">
-                    <?php
-                    $args = array( 'numberposts' => '10', 'post_type' => 'fotodeldia', 'post_status' => 'publish' );
-                    $resultados = wp_get_recent_posts( $args );
-                    foreach( $resultados as $resultado ){
-                        $img_big = wp_get_attachment_image_src( get_post_thumbnail_id( $resultado['ID'] ), 'nota-huge' );
-                        $img_thumb = wp_get_attachment_image_src( get_post_thumbnail_id( $resultado['ID'] ), 'nota-xxsmall' );                         
-                    ?>
-                    <div class="jcaritem"><a class="fancybox-thumbs" data-fancybox-group="thumb" href="<?php echo $img_big[0]; ?>"><img src="<?php echo $img_thumb[0]; ?>" alt="jcaritem"></a></div>
-                    <?php
-                    }
-                    ?>
-                  </div>
-                </div>
+              <h2 class="foto-head">La Chica de Humo</h2>
+              <div class="fotoshow">
+                <?php
+                $args = array( 'numberposts' => '10', 'post_type' => 'chicadeldia', 'post_status' => 'publish' );
+                $resultados = wp_get_recent_posts( $args );
+
+                $chicaCont = 0;
+                foreach( $resultados as $resultado ){
+                    $img_big = wp_get_attachment_image_src( get_post_thumbnail_id( $resultado['ID'] ), 'image-resized' );
+                    $img_thumb = wp_get_attachment_image_src( get_post_thumbnail_id( $resultado['ID'] ), 'portrait-mode' );
+                    if ( $chicaCont == 0 ) {
+                ?>
+                <a class="fancybox-thumbs" data-fancybox-group="chicadeldia" href="<?php echo $img_big[0]; ?>"><img src="<?php echo $img_thumb[0]; ?>" alt="Chica del Día"></a>
+                <?php
+                    } else { ?>
+                <a style="display:none;" class="fancybox-thumbs" data-fancybox-group="chicadeldia" href="<?php echo $img_big[0]; ?>"><img src="<?php echo $img_thumb[0]; ?>" alt="Chica del Día"></a>
+                <?php }
+                $chicaCont++;
+                  }
+                ?>
               </div>
-              <h3 class="foto-footer"><p>La Afición</p>
-              </h3>
             </div>
             <div class="aside-banner">
               <!--/* Revive Adserver Javascript Tag v3.0.4 */-->
