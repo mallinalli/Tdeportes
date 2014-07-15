@@ -99,7 +99,7 @@
           </div>
           <div class="widgets3 clearfix">
             <div class="complemento foto">
-              <h2 class="foto-head">Fotos del Día</h2>
+              <h2 class="foto-head">Chica del Día</h2>
               <div>
                 <div class="jcarousel">
                   <div class="jcarcontrol" id="izq"><span><i class="icon-chevron-left"></i></span></div>
@@ -119,7 +119,7 @@
                   </div>
                 </div>
               </div>
-              <h3 class="foto-footer"><p>La Afición</p>
+              <h3 class="foto-footer">
               </h3>
             </div>
             <div class="aside-banner">
