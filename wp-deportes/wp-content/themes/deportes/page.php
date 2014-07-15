@@ -122,8 +122,8 @@ Template Name: deportesPage
           <?php echo $img[0] ? '<img src="'.$img[0].'" alt="#">' : ''; ?>
                 
         <div class="nota-r">
-          <p class="titulo-s"><?php echo $recent_post["post_title"]; ?></p>
-          <p class="balazo-s"><?php echo $balazo; ?></p>
+          <p class="news-title"><?php echo $recent_post["post_title"]; ?></p>
+          <p class="news-des"><?php echo $balazo; ?></p>
           <p class="date"><?php echo get_the_time( 'd \d\e F \d\e Y' , $recent_post['ID']  ); ?></p>
         </div>
 

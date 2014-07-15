@@ -210,17 +210,19 @@ ul{
 	}
 }
  .nota-s{
- 	margin: 10px 0;
- 	padding: 0 10px;
+ 	/*margin: 10px 0;padding: 15px 0;*/
  	width: 100%;
+	position: relative;
+	border-bottom: 1px dashed #989a80;
  	a{ @extend %link-reset; }
  	img{
  		float: left;
- 		width: 30%;
+ 		width: 23%; //30%
+ 		margin-right: 2%;
  	}
  	.nota-r{
- 		float: right;
- 		width: 65%;
+ 		float: left;
+ 		width: 70%;
  		font-size: 18px;
  	}
  }
@@ -781,7 +783,8 @@ ul{
 }
 
 .pagination {
-  margin: 20px 0;
+  margin: 20px auto;
+  text-align: center;
   overflow: hidden;
   position: relative;
   ul, ol {
