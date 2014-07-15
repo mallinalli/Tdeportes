@@ -12,13 +12,8 @@ if ( function_exists( 'add_image_size' ) ) {
   add_image_size( 'nota-small', 169, 120 , true ); // home small notes
   add_image_size( 'nota-medium', 300, 225 , true ); // home foto del dia     
   add_image_size( 'nota-xxsmall', 100, 75 , true ); // home small notes
-	//add_image_size( 'nota-sl2', 676, 345 , true ); // front slider v2
-	//add_image_size( 'nota-large-medium', 650, 330 , true );	// sin definición de lugar donde mostrarse
-	//add_image_size( 'nota-medium', 480, 245 , true ); // front-slider
-	//add_image_size( 'nota-medium2', 400, 265 , true );	// sin definición de lugar donde mostrarse
-
-	//add_image_size( 'nota-normal', 479, 243 , true );
-	//add_image_size( 'nota-xxsmall', 100, 75 , true );
+  add_image_size( 'image-resized', 850, 550, false ); //Resized Version of the Image (Used in: Chica del Día)
+  add_image_size( 'portrait-mode', 400, 500, true ); //Cropped Vertical Version of the Image (Used in: Chica del Día)
 }
 
 add_theme_support( 'post-thumbnails' );
@@ -206,6 +201,7 @@ function create_infografia_post_type() {
       'show_ui' => true,
       'menu_position' => 4,
       'exclude_from_search' => false,
+      'menu_icon' => 'dashicons-analytics',
       'labels' => array(
       		'name'=> 'Infografías',
           'singular_name' => 'Infografía',
@@ -232,24 +228,25 @@ function create_infografia_post_type() {
     
     
 		$args = array(
-    	'description' => 'Fotos del día',
+    	'description' => 'Chica del Día',
       'show_ui' => true,
       'menu_position' => 4,
       'exclude_from_search' => false,
+      'menu_icon' => 'dashicons-businessman',
       'labels' => array(
-      		'name'=> 'Fotos del día',
-          'singular_name' => 'Foto del día',
-          'add_new' => 'Añadir Nueva Foto del día',
-          'add_new_item' => 'Añadir Nueva Foto del día',
-          'edit' => 'Editar Fotos del día',
-          'edit_item' => 'Editar Foto del día',
-          'new-item' => 'Nueva Foto del día',
-          'view' => 'Ver Fotos del día',
-          'view_item' => 'Ver Foto del día',
-          'search_items' => 'Buscar Fotos del día',
-          'not_found' => 'No se encontraron Fotos del día',
-          'not_found_in_trash' => 'No se encontraron Fotos del día en la Papelera',
-          'parent' => 'Parent Foto del día'
+      		'name'=> 'Chica del Día',
+          'singular_name' => 'Chica del día',
+          'add_new' => 'Añadir Nueva Chica del día',
+          'add_new_item' => 'Añadir Nueva Chica del día',
+          'edit' => 'Editar Chica del Día',
+          'edit_item' => 'Editar Chica del día',
+          'new-item' => 'Nueva Chica del día',
+          'view' => 'Ver Chica del Día',
+          'view_item' => 'Ver Chica del día',
+          'search_items' => 'Buscar Chica del Día',
+          'not_found' => 'No se encontraron Chicas del Día',
+          'not_found_in_trash' => 'No hay Chicas del Día en la Papelera',
+          'parent' => 'Parent Chica del día'
       ),
       'public' => true,
       'capability_type' => 'post',
@@ -258,13 +255,14 @@ function create_infografia_post_type() {
       'supports' => array('title', 'thumbnail')
     );
 
-    register_post_type( 'fotodeldia' , $args );    
+    register_post_type( 'chicadeldia' , $args );    
 
 		$args = array(
     	'description' => 'Resultados',
       'show_ui' => true,
       'menu_position' => 4,
       'exclude_from_search' => false,
+      'menu_icon' => 'dashicons-forms',
       'labels' => array(
       		'name'=> 'Resultados',
           'singular_name' => 'Resultado',

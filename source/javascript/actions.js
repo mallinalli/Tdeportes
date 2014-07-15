@@ -77,33 +77,6 @@ $('.day-cont').on('click','.day',function(){
 });*/
 
 /**
-  /* ========================
-  /* AQUÍ COMIENZA LA GALERÍA
-  /* ========================
-  */
-var margen = 0;
-var jItemW = $('.jcaritem').width()+5;
-var jItemsW = $('.jcaritem').length * ($('.jcaritem').width()+5);
-
-$('.jcarcontrol').on('click',function(){
-  moveCont($(this).attr('id'));
-});
-
-function moveCont(elid){
-  if (elid == 'izq') {
-    if (margen < 0){
-      margen = (margen+$('.jcaritem').width())+5;
-    }
-  } else {
-    if (margen > -(jItemsW-jItemW))
-    margen = (margen-$('.jcaritem').width())-5;
-  }
-  console.log('Margen: '+margen);
-  $('.jcar-cont').stop().animate({
-    marginLeft: margen
-  })
-}
-/**
   /* ===========================
   /* AQUÍ COMIENZA EL CALENDARIO
   /* ===========================
