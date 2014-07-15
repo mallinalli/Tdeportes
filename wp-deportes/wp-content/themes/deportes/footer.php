@@ -99,7 +99,7 @@
           </div>
           <div class="widgets3 clearfix">
             <div class="complemento foto">
-              <h2 class="foto-head">La Chica de Humo</h2>
+              <h2 class="foto-head">La Chica del Día</h2>
               <div class="fotoshow">
                 <?php
                 $args = array( 'numberposts' => '10', 'post_type' => 'chicadeldia', 'post_status' => 'publish' );
