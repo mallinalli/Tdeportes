@@ -173,6 +173,7 @@ ul{
 	width: 49%;
 	float: left;
 	background: none;
+	margin: 0 0.5%;
 	img{
 		width: 100%;
 	}
@@ -180,9 +181,6 @@ ul{
 		color: $elGris;
 		padding: 5px;
 		height: 50px;
-	}
-	&.hlpr-mr {
-		margin-right: 2%;
 	}
 }
 .section-header {

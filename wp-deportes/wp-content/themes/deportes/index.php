@@ -33,56 +33,52 @@
             for ($i=0; $i < $limite; $i++) {
             ?>
             <!--Renglón === Bear In Mind: "hlpr-mr" "hlpr-mr-t" === -->
-            <div class="">
-              <?php 
 
-              for ($j=0; $j < 3; $j++) { 
-                switch ($j) {
-                  case '0':
-                    $helper = 'hlpr-mr';
-                    break;
-                  
-                  case '1':
-                    $helper = 'hlpr-mr-t';
-                    break;
+            <?php 
 
-                  case '2':
-                    $helper = '';
-                    break;
-                }
-              ?>
-              <div class="principales <?php echo $helper; ?>">
-                <a href="<?php echo get_permalink( $notas[$j+$contador] ); ?>">
-                  <?php
-                      $img = wp_get_attachment_image_src( get_post_thumbnail_id($notas[$j+$contador]), 'nota-small' ); 
-                  ?>
-                  <img src="<?php echo $img[0]; ?>" alt="#">
-                  <div class="category"><span>
-                    <?php 
+            for ($j=0; $j < 3; $j++) { 
+              switch ($j) {
+                case '0':
+                  $helper = 'hlpr-mr';
+                  break;
+                case '1':
+                  $helper = 'hlpr-mr-t';
+                  break;
+                case '2':
+                  $helper = '';
+                  break;
+              }
+            ?>
+            <div class="principales <?php echo $helper; ?>">
+              <a href="<?php echo get_permalink( $notas[$j+$contador] ); ?>">
+                <?php
+                    $img = wp_get_attachment_image_src( get_post_thumbnail_id($notas[$j+$contador]), 'nota-small' ); 
+                ?>
+                <img src="<?php echo $img[0]; ?>" alt="#">
+                <div class="category"><span>
+                  <?php 
 
-                      $post_categories = wp_get_post_categories( $notas[$j+$contador] );
-                      $cats = array();
-                        
-                      foreach($post_categories as $c){
-                        $cat = get_category( $c );
-                        $cats[] = array( 'name' => $cat->name, 'slug' => $cat->slug );
-                      }
+                    $post_categories = wp_get_post_categories( $notas[$j+$contador] );
+                    $cats = array();
+                      
+                    foreach($post_categories as $c){
+                      $cat = get_category( $c );
+                      $cats[] = array( 'name' => $cat->name, 'slug' => $cat->slug );
+                    }
 
-                      if ($cats[0]['name'] == 'Portada' OR $cats[0]['name'] == 'Sin Categoría'){
-                        echo ' ';
-                      } else{
-                        echo $cats[0]['name']; 
-                      }
-                   
+                    if ($cats[0]['name'] == 'Portada' OR $cats[0]['name'] == 'Sin Categoría'){
+                      echo ' ';
+                    } else{
+                      echo $cats[0]['name']; 
+                    }
+                 
 
-                    ?> 
-                    </span></div>
-                  <p class="elipseme"> <?php echo get_the_title($notas[$j+$contador]); ?></p>
-                </a>
-              </div>
-              <?php } ?>
+                  ?> 
+                  </span></div>
+                <p class="elipseme"> <?php echo get_the_title($notas[$j+$contador]); ?></p>
+              </a>
             </div>
-
+            <?php } ?>
             <!--Fin de Renglón-->
             <?php 
                 $contador = $contador+3;
