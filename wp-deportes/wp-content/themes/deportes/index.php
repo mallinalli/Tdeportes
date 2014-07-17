@@ -33,7 +33,7 @@
             for ($i=0; $i < $limite; $i++) {
             ?>
             <!--Renglón === Bear In Mind: "hlpr-mr" "hlpr-mr-t" === -->
-            <div class="clearfix">
+            <div class="">
               <?php 
 
               for ($j=0; $j < 3; $j++) { 
