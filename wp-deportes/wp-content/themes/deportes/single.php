@@ -52,7 +52,7 @@
           		<p class="pie-foto"><?php echo $thumbnail_details['caption']; ?></p>
           		<?php endif; ?>
               <aside class="related-nota clearfix">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/brasil1.png" class="img-nota">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/nota1.png" class="img-nota">
               </aside>
               <p class="source"><span><strong><?php echo $agencia; ?></strong></span><br><span><?php the_time('d/m/Y h:i') ?></span></p>
               <div class="zona-balazo">
