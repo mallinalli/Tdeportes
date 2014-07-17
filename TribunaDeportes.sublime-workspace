@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"mar",
+				"margin"
+			],
+			[
 				"chica",
 				"chicaCont"
 			],
@@ -58,10 +62,6 @@
 			[
 				"marg",
 				"margin"
-			],
-			[
-				"mar",
-				"margin-top"
 			],
 			[
 				"margi",
@@ -548,8 +548,14 @@
 	},
 	"file_history":
 	[
-		"/C/Users/pdigital20/Documents/GitHub/Tdeportes/source/javascript/actions.js",
+		"/C/Users/pdigital20/Documents/GitHub/Tdeportes/wp-deportes/wp-content/themes/deportes/index.php",
 		"/C/Users/pdigital20/Documents/GitHub/Tdeportes/source/scss/_body.scss",
+		"/C/Users/pdigital20/Documents/GitHub/Tdeportes/source/scss/_tablet.scss",
+		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-2/wp-mail.php",
+		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-2/mailtest.php",
+		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-2/wp-config.php",
+		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-2/pluggable.php",
+		"/C/Users/pdigital20/Documents/GitHub/Tdeportes/source/javascript/actions.js",
 		"/C/Users/pdigital20/Documents/GitHub/Tdeportes/wp-deportes/wp-content/themes/deportes/header.php",
 		"/C/Users/pdigital20/Documents/GitHub/Tdeportes/wp-deportes/wp-content/themes/deportes/footer.php",
 		"/C/Users/pdigital20/Documents/GitHub/Tdeportes/wp-deportes/wp-content/themes/deportes/functions.php",
@@ -576,7 +582,6 @@
 		"/C/wamp/www/deportes/wp-content/themes/periodicodigital/css/style.css",
 		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-1/style.css",
 		"/C/wamp/www/deportes/wp-config.php",
-		"/C/Users/pdigital20/Documents/GitHub/Tdeportes/wp-deportes/wp-content/themes/deportes/index.php",
 		"/C/Users/pdigital20/Documents/GitHub/Tdeportes/wp-deportes/.htaccess",
 		"/C/Users/pdigital20/Documents/GitHub/Tdeportes/wp-deportes/wp-content/themes/brasil/style.css",
 		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-1/.htaccess",
@@ -670,12 +675,7 @@
 		"/C/wamp/www/lab/twitter/twitter.php",
 		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-2/twitter.php",
 		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-2/tribuna_tweets.php",
-		"/C/wamp/www/lab/scraper/scraper.php",
-		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-2/divisas 2.json",
-		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-2/divisas.json",
-		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-1/twitter.php",
-		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-1/divisas.json",
-		"/C/wamp/www/lab/scraper/domscrap.php"
+		"/C/wamp/www/lab/scraper/scraper.php"
 	],
 	"find":
 	{
@@ -686,6 +686,7 @@
 		"height": 90.0,
 		"where_history":
 		[
+			"C:\\Users\\pdigital20\\Documents\\GitHub\\Tdeportes\\source\\scss",
 			"C:\\Users\\pdigital20\\Documents\\GitHub\\Tdeportes\\wp-deportes\\wp-content\\themes\\deportes",
 			"C:\\Users\\pdigital20\\Documents\\GitHub\\Tdeportes\\source\\scss",
 			"C:\\Users\\pdigital20\\Documents\\GitHub\\Tdeportes\\wp-deportes\\wp-content\\themes\\deportes",
@@ -760,6 +761,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"mail",
+			".principales",
+			"hlpr",
 			"entrada",
 			"fotodeldia",
 			"Foto del día",
@@ -884,10 +888,7 @@
 			",\"otros-deportes:Otros deportes\",",
 			",beisbol:Béisbol,",
 			",nacional:Nacional,",
-			",oaxaca-2:Oaxaca,",
-			",\"minuto-a-minuto:Minuto a minuto\",",
-			",\"distrito-federal:Distrito Federal\",",
-			",salud:Salud,"
+			",oaxaca-2:Oaxaca,"
 		],
 		"highlight": true,
 		"in_selection": false,
