@@ -116,27 +116,15 @@ Template Name: deportesPage
 
     ?>
     <div class="nota-s clearfix">
-        <a href="<?php echo get_permalink( $recent_post['ID'] ); ?>"></a>
+        <a href="<?php echo get_permalink( $recent_post['ID'] ); ?>">
           <?php $img = wp_get_attachment_image_src( get_post_thumbnail_id( $recent_post['ID'] ), 'nota-small' ); ?>
-                
-          <?php echo $img[0] ? '<img src="'.$img[0].'" alt="#">' : ''; ?>
-                
-        <div class="nota-r">
-          <p class="news-title"><?php echo $recent_post["post_title"]; ?></p>
-          <p class="news-des"><?php echo $balazo; ?></p>
-          <p class="date"><?php echo get_the_time( 'd \d\e F \d\e Y' , $recent_post['ID']  ); ?></p>
-        </div>
-
-
-
-      <!--a href="<?php echo get_permalink($nota["ID"]); ?>">
-        <?php $img = wp_get_attachment_image_src( get_post_thumbnail_id( $nota['ID'] ), 'nota-small' ); ?>
-        <?php echo $img[0] ? '<img src="'.$img[0].'" alt="#">' : ''; ?>
-        <div class="nota-r">
-          <p><?php echo $nota["post_title"] ?></p>
-          <p class="date"><?php echo date( 'd \d\e F \d\e Y', strtotime( $nota['post_date'] ) ); ?></p>
-        </div>
-      </a-->
+          <?php echo $img[0] ? '<img src="'.$img[0].'" alt="#">' : ''; ?>  
+          <div class="nota-r">
+            <p class="news-title"><?php echo $recent_post["post_title"]; ?></p>
+            <p class="news-des"><?php echo $balazo; ?></p>
+            <p class="date"><?php echo get_the_time( 'd \d\e F \d\e Y' , $recent_post['ID']  ); ?></p>
+          </div>
+        </a>
     </div>
     <?php 
       }
