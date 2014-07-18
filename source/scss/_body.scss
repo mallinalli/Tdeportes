@@ -309,45 +309,7 @@ ul{
 		}
 	}
 }
-.calendario{
-	width: 100%;
-	@include user-select(none);
-	.cal-fecha{
-		width: 32%;
-		height: 60px;
-		background: #ccc;
-		color: $elGris;
-		font-size: 18px;
- 		font-weight: bold;
- 		float: left;
- 		padding: 10px 0;
- 		margin: 5px 0;
- 		text-align: center;
- 		cursor: pointer;
- 		&.hlpr-mr, &.hlpr-mr-t {
- 			margin-right: 2%;
- 		}
-	}
-	.cal-selected {
-		background: #fff;
-		color: $elGris
-	}
-	.cal-cont,.removeme {
-		float: left;
-		width: 100%;
-	}
-	.hidden {
-		display: none;
-	}
-	table {
-		width: 80%;
-		margin: 10px auto;
-	}
-	td {
-		padding: 5px 0;
-		text-align: center;
-	}
-}
+
 .pie-foto{
 	background: none;
 	font-size: 16px;
