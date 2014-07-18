@@ -88,41 +88,10 @@ ul{
 	border-radius: 3px;
 	@include box-sizing(border-box);
 }
-.top-banner{
-	width: 99%;
-	margin: 0 0.5% 10px 0.5%;
-}
-.banner-info{
-	width: 66.3%;
-	float: left;
-	img{
-		width: 100%;
-		height: auto;
-	}
-}
-.banner-comp{
-	width: 32.7%;
-	float: left;
-	margin: 0 0 0 1%;
-	img{
-		width: 100%;
-		height: auto;
-	}
+.top-banner, .banner-info, .banner-comp, .small-banner, .medium-banner, .aside-banner{
+	display: none;
 }
 
-.small-banner, .medium-banner, .xsmall-banner {
-	margin: 5px 0;
-}
-
-.top-banner, .aside-banner, .small-banner, .medium-banner, .xsmall-banner {
-	img{
-		width: 100%;
-		height: auto;
-		margin: 0 auto;
-		max-width: 1024px;
-		display: block;
-	}
-}
 
 /* ==========================
 	Componente de video

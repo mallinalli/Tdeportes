@@ -69,6 +69,7 @@ function pd_home_settings_page_fn(){
 <?php }
 
 function pd_home_register_settings(){
+
     // Add settings section
     add_settings_section( 'pd_notes_home' , 'Notas - Página principal', 'pd_home_display_notes', 'pd-home-settings' );
 
@@ -138,6 +139,7 @@ function pd_home_register_settings(){
       register_setting('pd_home_settings_group', 'pd_seleccion_note_' . $i , 'pd_home_validate_settings' );
       add_settings_field( $field_args['id'] , $field_args['label'] , 'pd_home_display_field', 'pd-home-settings', 'pd_notes_seleccion', $field_args );
     } // end for    */
+>>>>>>> origin/master
 }
 
 function pd_home_display_notes($section){}
