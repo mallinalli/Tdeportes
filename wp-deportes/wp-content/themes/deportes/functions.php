@@ -139,7 +139,6 @@ function pd_home_register_settings(){
       register_setting('pd_home_settings_group', 'pd_seleccion_note_' . $i , 'pd_home_validate_settings' );
       add_settings_field( $field_args['id'] , $field_args['label'] , 'pd_home_display_field', 'pd-home-settings', 'pd_notes_seleccion', $field_args );
     } // end for    */
->>>>>>> origin/master
 }
 
 function pd_home_display_notes($section){}
@@ -377,6 +376,8 @@ function fecha_custom_fields_save( $post_ID ) {
     }
   }
 }*/
+
+// ================================================================================================================= ECHARLE UN OJO A ESTO, PARECE SER PARA PERSONALIZAR LA LOGIN SCREEN
 
 /*
 add_action("login_head", "custom_login_head");
