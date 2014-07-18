@@ -291,9 +291,90 @@ function create_custom_post_types() {
     'supports' => array('title')
   );
 
-  register_post_type( 'resultado' , $args ); 
+  register_post_type( 'resultado' , $args );
+
+  // UN POST TYPE DE RESERVA, POR SI OCUPAN :3
+  /*$args = array(
+    'description' => 'Fechas',
+    'show_ui' => true,
+    'menu_position' => 4,
+    'exclude_from_search' => false,
+    'menu_icon' => 'dashicons-calendar',
+    'labels' => array(
+        'name'=> 'Fecha',
+        'singular_name' => 'Fecha',
+        'add_new' => 'Añadir Nueva Fecha',
+        'add_new_item' => 'Añadir Nueva Fecha',
+        'edit' => 'Editar Fecha',
+        'edit_item' => 'Editar Fecha',
+        'new-item' => 'Nueva Fecha',
+        'view' => 'Ver Fecha',
+        'view_item' => 'Ver Fecha',
+        'search_items' => 'Buscar Fecha',
+        'not_found' => 'No se encontraron Fechas',
+        'not_found_in_trash' => 'No se encontraron Fechas en la Papelera',
+        'parent' => 'Parent Fecha'
+    ),
+    'public' => true,
+    'capability_type' => 'post',
+    'hierarchical' => false,
+    'rewrite' => true,
+    'supports' => false
+  );
+
+  register_post_type( 'fecha' , $args ); */
 }
 
+// ================================================================================================================= Aquí voy a intentar añadir un campo al post tipo fecha (IGUAL, QUEDA DE RESERVA)
+/*add_action( 'add_meta_boxes', 'fecha_custom_fields' );
+
+function fecha_custom_fields() {
+  add_meta_box( 'post_meta1', 'Campo 1', 'field_campo_1', 'fecha', 'advanced', 'high' );
+  add_meta_box( 'post_meta2', 'Campo 2', 'field_campo_2', 'fecha', 'advanced', 'high' );
+  add_meta_box( 'post_meta3', 'Campo 3', 'field_campo_3', 'fecha', 'side', 'high' );
+  add_meta_box( 'post_meta4', 'Campo 4', 'field_campo_4', 'fecha', 'side', 'high' );
+}
+
+function field_campo_1( $post ) {
+    $post_field_1 = get_post_meta( $post->ID, '_fecha_campo_1', true);
+  ?>
+    <?php echo 'Equipo 1 '; ?><input type="text" name="fecha_campo_1" value="<?php echo esc_attr( $fecha_campo_1 ); ?>" />
+  <?php
+}
+function field_campo_2( $post ) {
+    $post_field_2 = get_post_meta( $post->ID, '_fecha_campo_2', true);
+  ?>
+    <?php echo 'Equipo 2 '; ?><input type="text" name="fecha_campo_2" value="<?php echo esc_attr( $fecha_campo_2 ); ?>" />
+  <?php
+}
+function field_campo_3( $post ) {
+    $post_field_3 = get_post_meta( $post->ID, '_fecha_campo_3', true);
+  ?>
+    <?php echo 'Fecha '; ?><input type="date" name="fecha_campo_3" value="<?php echo esc_attr( $fecha_campo_3 ); ?>" />
+  <?php
+}
+function field_campo_4( $post ) {
+    $post_field_4 = get_post_meta( $post->ID, '_fecha_campo_4', true);
+  ?>
+    <?php echo 'Estadio '; ?><input type="date" name="fecha_campo_4" value="<?php echo esc_attr( $fecha_campo_4 ); ?>" />
+  <?php
+}
+
+add_action( 'save_post', 'fecha_custom_fields_save' );
+
+function fecha_custom_fields_save( $post_ID ) {
+
+  global $post;
+
+  if( $post->post_type == "fecha" ) {
+    if (isset( $_POST ) ) {
+        update_post_meta( $post_ID, '_fecha_campo_1', strip_tags( $_POST['fecha_campo_1'] ) );
+        update_post_meta( $post_ID, '_fecha_campo_1', strip_tags( $_POST['fecha_campo_2'] ) );
+        update_post_meta( $post_ID, '_fecha_campo_1', strip_tags( $_POST['fecha_campo_3'] ) );
+        update_post_meta( $post_ID, '_fecha_campo_1', strip_tags( $_POST['fecha_campo_4'] ) );
+    }
+  }
+}*/
 
 /*
 add_action("login_head", "custom_login_head");
