@@ -89,7 +89,10 @@ ul{
 	@include box-sizing(border-box);
 }
 .top-banner, .banner-info, .banner-comp, .small-banner, .medium-banner, .aside-banner{
-	display: none;
+	img {
+		max-width: 100%;
+		height: auto;
+	}
 }
 
 
