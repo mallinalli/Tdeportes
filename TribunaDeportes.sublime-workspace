@@ -4,6 +4,58 @@
 		"selected_items":
 		[
 			[
+				"tog",
+				"toggleClass"
+			],
+			[
+				"fec",
+				"fechatransit"
+			],
+			[
+				"la",
+				"laJornada"
+			],
+			[
+				"togg",
+				"slideToggle"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"el",
+				"elColor3"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"bor",
+				"border-bottom"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"marg",
+				"margin-left"
+			],
+			[
+				"arra",
+				"array"
+			],
+			[
 				"mar",
 				"margin"
 			],
@@ -56,14 +108,6 @@
 				"date"
 			],
 			[
-				"fon",
-				"font-size"
-			],
-			[
-				"marg",
-				"margin"
-			],
-			[
 				"margi",
 				"margin-top"
 			],
@@ -74,10 +118,6 @@
 			[
 				"tex",
 				"text-align"
-			],
-			[
-				"el",
-				"elverde"
 			],
 			[
 				"inline",
@@ -168,10 +208,6 @@
 				"home_option_number"
 			],
 			[
-				"bor",
-				"border-bottom"
-			],
-			[
 				"border",
 				"border-bottom"
 			],
@@ -200,10 +236,6 @@
 				"bolder"
 			],
 			[
-				"fec",
-				"fechaOtra"
-			],
-			[
 				"date",
 				"date_create"
 			],
@@ -220,10 +252,6 @@
 				"fechaActual"
 			],
 			[
-				"arra",
-				"array	$… = array (…)"
-			],
-			[
 				"sec",
 				"secMund"
 			],
@@ -234,10 +262,6 @@
 			[
 				"bra",
 				"brasil3"
-			],
-			[
-				"font",
-				"font-size"
 			],
 			[
 				"bras",
@@ -252,10 +276,6 @@
 				"border"
 			],
 			[
-				"back",
-				"background-size"
-			],
-			[
 				"margin",
 				"margin"
 			],
@@ -268,20 +288,12 @@
 				"review"
 			],
 			[
-				"padd",
-				"padding-left"
-			],
-			[
 				"tabl",
 				"table-cell"
 			],
 			[
 				"tab",
 				"table-cell"
-			],
-			[
-				"pad",
-				"padding"
 			],
 			[
 				"inlin",
@@ -424,10 +436,6 @@
 				"background"
 			],
 			[
-				"la",
-				"laCuenta"
-			],
-			[
 				"az",
 				"elAzulClaro"
 			],
@@ -506,14 +514,6 @@
 			[
 				"audio",
 				"audio_container"
-			],
-			[
-				"pos",
-				"posFinal"
-			],
-			[
-				"in",
-				"input	Tag"
 			]
 		]
 	},
@@ -528,7 +528,7 @@
 		[
 			[
 				"Package Control: ",
-				"Package Control: Remove Package"
+				"Package Control: Install Package"
 			]
 		],
 		"width": 400.0
@@ -548,17 +548,37 @@
 	},
 	"file_history":
 	[
+		"/C/Users/pdigital20/Documents/GitHub/Tdeportes/wp-deportes/wp-content/themes/deportes/footer.php",
+		"/C/Users/pdigital20/Documents/GitHub/Tdeportes/wp-deportes/wp-content/themes/deportes/infografias.php",
+		"/C/Users/pdigital20/Documents/GitHub/Tdeportes/wp-deportes/wp-content/themes/deportes/noticias.php",
+		"/C/Users/pdigital20/Documents/GitHub/Tdeportes/wp-deportes/wp-content/themes/deportes/page.php",
+		"/C/Users/pdigital20/Documents/GitHub/Tdeportes/wp-deportes/wp-content/themes/deportes/single.php",
+		"/C/Users/pdigital20/Documents/GitHub/Tdeportes/wp-deportes/wp-content/themes/deportes/header.php",
 		"/C/Users/pdigital20/Documents/GitHub/Tdeportes/wp-deportes/wp-content/themes/deportes/index.php",
 		"/C/Users/pdigital20/Documents/GitHub/Tdeportes/source/scss/_body.scss",
+		"/C/Users/pdigital20/Documents/GitHub/Tdeportes/source/javascript/actions.js",
+		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-1/index.php",
+		"/C/Users/pdigital20/Documents/GitHub/Tdeportes/wp-deportes/wp-content/themes/deportes/calendario.php",
+		"/C/Users/pdigital20/Documents/GitHub/Tdeportes/source/scss/_settings.scss",
+		"/C/Users/pdigital20/Documents/GitHub/Tdeportes/source/scss/_video.scss",
+		"/C/Users/pdigital20/Documents/GitHub/Tdeportes/source/calendario.php",
+		"/C/Users/pdigital20/Documents/GitHub/Tdeportes/source/scss/base.scss",
+		"/C/Users/pdigital20/Documents/GitHub/Tdeportes/wp-deportes/wp-content/themes/deportes/functions.php",
+		"/C/Users/pdigital20/Documents/GitHub/Tdeportes/source/scss/_desktop.scss",
 		"/C/Users/pdigital20/Documents/GitHub/Tdeportes/source/scss/_tablet.scss",
+		"/C/Users/pdigital20/Documents/GitHub/Tdeportes/source/javascript/calendario.php",
+		"/C/Users/pdigital20/Documents/GitHub/Tdeportes/wp-deportes/wp-content/themes/deportes/calendario_build.php",
+		"/C/Users/pdigital20/Documents/GitHub/Tdeportes/wp-deportes/wp-content/themes/deportes/style.css",
+		"/C/Users/pdigital20/Documents/GitHub/Tdeportes/wp-deportes/wp-content/themes/deportes/includes/calendario.json",
+		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-1/header.php",
+		"/C/Users/pdigital20/Desktop/Backup 27-06-2014/periodicodigital/functions.php",
+		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-2/functions 2.php",
+		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-2/functions.php",
+		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-2/header.php",
 		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-2/wp-mail.php",
 		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-2/mailtest.php",
 		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-2/wp-config.php",
 		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-2/pluggable.php",
-		"/C/Users/pdigital20/Documents/GitHub/Tdeportes/source/javascript/actions.js",
-		"/C/Users/pdigital20/Documents/GitHub/Tdeportes/wp-deportes/wp-content/themes/deportes/header.php",
-		"/C/Users/pdigital20/Documents/GitHub/Tdeportes/wp-deportes/wp-content/themes/deportes/footer.php",
-		"/C/Users/pdigital20/Documents/GitHub/Tdeportes/wp-deportes/wp-content/themes/deportes/functions.php",
 		"/C/Users/pdigital20/Documents/GitHub/Tdeportes/wp-deportes/wp-content/themes/deportes/js/actions.min.js",
 		"/C/Users/pdigital20/Documents/GitHub/Tdeportes/wp-deportes/wp-content/themes/deportes/404.php",
 		"/C/Users/pdigital20/Documents/GitHub/Tdeportes/wp-deportes/wp-content/themes/deportes/error_log",
@@ -568,10 +588,8 @@
 		"/C/Users/pdigital20/Documents/GitHub/Tdeportes/wp-deportes/wp-content/themes/deportes/futbol.php",
 		"/C/Program Files (x86)/World of Warcraft/WTF/Config.wtf",
 		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-2/class-car-dealer-fields.php",
-		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-2/functions 2.php",
 		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-1/footer.php",
 		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-2/progression-car-dealer.php",
-		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-2/functions.php",
 		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-1/calendario.json",
 		"/C/Users/pdigital20/Desktop/PeriodicoDigital - Replication Steps.txt",
 		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-1/calendario.php",
@@ -586,8 +604,6 @@
 		"/C/Users/pdigital20/Documents/GitHub/Tdeportes/wp-deportes/wp-content/themes/brasil/style.css",
 		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-1/.htaccess",
 		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-1/index 2.php",
-		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-1/index.php",
-		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-1/header.php",
 		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-1/exa.php",
 		"/C/Users/pdigital20/Desktop/taxonomy-seccion-puebla.php",
 		"/C/Users/pdigital20/Documents/Dropbox/PD/LA MIGRACIÓN/Columnas.csv",
@@ -633,7 +649,6 @@
 		"/C/Users/pdigital20/Desktop/johndyer-mediaelement-2.14.2-0-g743f446/johndyer-mediaelement-743f446/demo/mediaelementplayer-audio.html",
 		"/C/Users/pdigital20/Documents/GitHub/PD/html/includes/header.php",
 		"/C/Users/pdigital20/Documents/GitHub/Brasil2014/html/includes/header.php",
-		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-2/header.php",
 		"/C/Users/pdigital20/Desktop/Backup 18-06-2014/periodicodigital/header.php",
 		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-2/footer.php",
 		"/C/Users/pdigital20/Documents/GitHub/PD/scss/_header.scss",
@@ -660,22 +675,7 @@
 		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-2/taxonomy-seccion-turismo.php",
 		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-2/taxonomy-seccion-universidades.php",
 		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-2/single-columna.php",
-		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-2/search.php",
-		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-2/deportivos.php",
-		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-2/columnistas.php",
-		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-2/index.php",
-		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-2/single.php",
-		"/C/Users/pdigital20/Documents/GitHub/PD/html/columnistas.php",
-		"/C/Users/pdigital20/Documents/GitHub/PD/html/index.php",
-		"/C/Users/pdigital20/Documents/GitHub/PD/html/seccion.php",
-		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-2/calendario.php",
-		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-2/calendario.json",
-		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-2/tribuna_tweets 2.php",
-		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-2/scraper.php",
-		"/C/wamp/www/lab/twitter/twitter.php",
-		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-2/twitter.php",
-		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-2/tribuna_tweets.php",
-		"/C/wamp/www/lab/scraper/scraper.php"
+		"/C/Users/pdigital20/AppData/Local/Temp/fz3temp-2/search.php"
 	],
 	"find":
 	{
@@ -686,6 +686,8 @@
 		"height": 90.0,
 		"where_history":
 		[
+			"C:\\Users\\pdigital20\\Documents\\GitHub\\Tdeportes\\source\\scss",
+			"C:\\Users\\pdigital20\\Documents\\GitHub\\Tdeportes\\wp-deportes\\wp-content\\themes\\deportes",
 			"C:\\Users\\pdigital20\\Documents\\GitHub\\Tdeportes\\source\\scss",
 			"C:\\Users\\pdigital20\\Documents\\GitHub\\Tdeportes\\wp-deportes\\wp-content\\themes\\deportes",
 			"C:\\Users\\pdigital20\\Documents\\GitHub\\Tdeportes\\source\\scss",
@@ -761,6 +763,62 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"banner",
+			"$(this).data('calfecha')",
+			"$('.fechactiva').attr('id')",
+			"Jornada",
+			"$('.calevent:eq('+elEvent+')')",
+			"calevent",
+			"$elActual",
+			"slideToggle",
+			"calevent",
+			"laJornada",
+			".",
+			"Jornada",
+			"This is a day",
+			"class=\"section-header",
+			"$elRojo",
+			"$elAzul",
+			"$elAmarillo",
+			"$elGris",
+			"$elVerde",
+			"nota-s",
+			"hour",
+			"team",
+			"cal",
+			"fechas",
+			"grupo",
+			"\"dia\"",
+			">>>>>>> origin/master",
+			"text",
+			"1",
+			"$post_ID",
+			"<?php",
+			"?>",
+			"field_campo_1",
+			"<?php",
+			"fecha_campo_1",
+			"post_balazo",
+			"_post_balazo",
+			"post_agencia_meta",
+			"post_meta2",
+			"post_balazo_meta",
+			"editor",
+			"add_meta_boxes",
+			"post_agencia_meta",
+			"post_balazo_meta",
+			"balazo",
+			"supports",
+			"editor",
+			"register_post",
+			"Nuevo",
+			"Resultado",
+			"Resultados",
+			"create_infografia_post_type",
+			"init",
+			"create_infografia_post_type",
+			"resultados",
+			"the_post_thumbnail_caption",
 			"mail",
 			".principales",
 			"hlpr",
@@ -832,63 +890,7 @@
 			",\"minuto-a-minuto:Minuto a minuto\",",
 			",politica:Política,",
 			",municipios:Municipios,",
-			",beisbol:Béisbol,",
-			",\"otros-deportes:Otros deportes\",",
-			",soccer:Soccer,",
-			",\"pasion-franja:Pasión Franja\",",
-			",amateur:Amateur,",
-			",colonias:Colonias,",
-			",tlaxcala:Tlaxcala,",
-			",deportes:Deportes,",
-			",jalisco:Jalisco,",
-			",\"ciencia-y-tecnologia:Ciencia y Tecnología\",",
-			",veracruz:Veracruz,",
-			",especiales:Especiales,",
-			",oaxaca-2:Oaxaca,",
-			",universidades:Universidades,",
-			",politica:Política,",
-			",\"mexico-2012:México 2012\",",
-			",cultura:Cultura,",
-			",\"minuto-a-minuto:Minuto a minuto\",",
-			",municipios:Municipios,",
-			",\"pasion-franja:Pasión Franja\",",
-			",amateur:Amateur,",
-			",soccer:Soccer,",
-			",\"otros-deportes:Otros deportes\",",
-			",beisbol:Béisbol,",
-			",nacional:Nacional,",
-			",\"estado-de-mexico-2:Estado de México\",",
-			"\"estado-de-mexico-2:Estado de México\"",
-			",\"estado-de-mexico-2:Estado de México\",",
-			",espectaculos:Espectaculos,",
-			",seguridad:Seguridad,",
-			",internacional:Internacional,",
-			",\"distrito-federal:Distrito Federal\",",
-			",guerrero:Guerrero,",
-			",puebla:Puebla,",
-			",salud:Salud,",
-			",\"2014/",
-			",2014/",
-			",tlaxcala:Tlaxcala,",
-			",jalisco:Jalisco,",
-			",\"estado-de-mexico-2:Estado de México\",",
-			",colonias:Colonias,",
-			",municipios:Municipios,",
-			",guerrero:Guerrero,",
-			",cultura:Cultura,",
-			",\"ciencia-y-tecnologia:Ciencia y Tecnología\",",
-			",politica:Política,",
-			"\"mexico-2012:México 2012\",",
-			",\"mexico-2012:México 2012\",",
-			",especiales:Especiales,",
-			",internacional:Internacional,",
-			",\"pasion-franja:Pasión Franja\",",
-			",amateur:Amateur,",
-			",soccer:Soccer,",
-			",\"otros-deportes:Otros deportes\",",
-			",beisbol:Béisbol,",
-			",nacional:Nacional,",
-			",oaxaca-2:Oaxaca,"
+			",beisbol:Béisbol,"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -896,6 +898,11 @@
 		"regex": false,
 		"replace_history":
 		[
+			"$elColor5",
+			"$elColor4",
+			"$elColor3",
+			"$elColor2",
+			"$elColor1",
 			"<article class=\"mas-visto\">	\n							<div class=\"small-banner\">\n								<!--/* Revive Adserver Javascript Tag v3.0.4 */-->\n\n								<script type='text/javascript'><!--//<![CDATA[\n								   var m3_u = (location.protocol=='https:'?'https://www.bnrspd.dreamhosters.com/revive/www/delivery/ajs.php':'http://www.bnrspd.dreamhosters.com/revive/www/delivery/ajs.php');\n								   var m3_r = Math.floor(Math.random()*99999999999);\n								   if (!document.MAX_used) document.MAX_used = ',';\n								   document.write (\"<scr\"+\"ipt type='text/javascript' src='\"+m3_u);\n								   document.write (\"?zoneid=8\");\n								   document.write ('&amp;cb=' + m3_r);\n								   if (document.MAX_used != ',') document.write (\"&amp;exclude=\" + document.MAX_used);\n								   document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));\n								   document.write (\"&amp;loc=\" + escape(window.location));\n								   if (document.referrer) document.write (\"&amp;referer=\" + escape(document.referrer));\n								   if (document.context) document.write (\"&context=\" + escape(document.context));\n								   if (document.mmm_fo) document.write (\"&amp;mmm_fo=1\");\n								   document.write (\"'><\\/scr\"+\"ipt>\");\n								//]]>--></script><noscript><a href='http://www.bnrspd.dreamhosters.com/revive/www/delivery/ck.php?n=a8f1b97c&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='http://www.bnrspd.dreamhosters.com/revive/www/delivery/avw.php?zoneid=8&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a8f1b97c' border='0' alt='' /></a></noscript>\n\n							</div>\n							<header>Destacadas</header>\n							<ul>\n								<?php\n								$popularpost = new WP_Query( array( 'posts_per_page' => 5, 'post_type' => 'post', 'post_status' => 'publish', 'meta_key' => 'wpb_post_views_count', 'orderby' => 'meta_value_num', 'order' => 'DESC', 'date_query' => array( array( 'column' => 'post_date_gmt', 'after' => '5 hours ago' ) )  ) );\n								while ( $popularpost->have_posts() ) : $popularpost->the_post();\n								?>\n								<li><a href=\"<?php the_permalink(); ?>\"><?php the_title(); ?></a></li>\n								<?php endwhile; ?>\n							</ul>\n						</article>",
 			"$popularpost = new WP_Query( array( 'posts_per_page' => 5, 'post_type' => 'post', 'post_status' => 'publish', 'meta_key' => 'wpb_post_views_count', 'orderby' => 'meta_value_num', 'order' => 'DESC', 'date_query' => array( array( 'column' => 'post_date_gmt', 'after' => '5 hours ago' ) )  ) );",
 			"'after' => '5 hours ago'",
