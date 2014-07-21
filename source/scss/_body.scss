@@ -1,6 +1,6 @@
 body {
   font-family: 'Quattrocento Sans', sans-serif;
-  color: $elGris; /*gris*/
+  color: $elColor2; /*gris*/
   /*background: url(../img/bg2.jpg) no-repeat center center fixed;
   @include background-size (cover);*/
 } 
@@ -38,14 +38,14 @@ ul{
   max-width: 1024px;
   margin: 0 auto;
 }
-
+/* ------------------------------------------------------------------------------- MENU */
 .menu{
 	font-weight: bold;
 	text-align: center;
-	background: $elVerde;
+	background: $elColor1;
 	padding: 5px;
 	display: inherit;
-	@include border-radius(4px);
+	@include border-radius(0  0 4px 4px);
 	a{
 		color: #fff;
 	}
@@ -111,7 +111,7 @@ ul{
 }
 .principal{
 	width: 100%;
-	background: $elGris;
+	background: $elColor2;
 	img{
 		float: left;
 		width: 100%;
@@ -127,7 +127,7 @@ ul{
 	}
 }
 .category{
-	background: $elGris;
+	background: $elColor2;
 	color: #fff;
 	span{
 		/*float: left;*/
@@ -147,21 +147,46 @@ ul{
 		width: 100%;
 	}
 	p{
-		color: $elGris;
+		color: $elColor2;
 		padding: 5px;
 		height: 50px;
 	}
 }
+
+/* ------------------------------------------------------------------------------- CABECERA DE SECCIÓN */
 .section-header {
 	margin-top: 0;
 	font-weight: bold;
+	overflow: hidden;
+	span {
+		margin-left: 3%;
+		padding-left: 2%;
+		font-weight: lighter;
+		color: $elColor1;
+		position: relative;
+		&:before, &:after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			height: 1px;
+			background: $elColor1;
+			width: 99999px;
+		}
+		&:before {
+			left: 100%;
+			margin-left: 20px;
+		}
+		&:after {
+			right: 100%;
+		}
+	}
 }
 .nota{
 	width: 32.6%;
 	float: left;
 	display: inline-block;
 	h2{
-		background: $elGris;
+		background: $elColor2;
 		color: #fff;
 		font-size: 14px;
 		font-family: 'Quattrocento Sans', sans-serif;
@@ -216,7 +241,7 @@ ul{
 	float: right;
 	font-size: 14px;
 	font-family: 'Quattrocento Sans', sans-serif;
-  	color: $elGris;
+  	color: $elColor2;
 }
 /**
 /* Botón de Compartir
@@ -283,7 +308,7 @@ ul{
 .grupo{
 	.cal-grupo{
 		color: #fff;
-		background: $elGris;
+		background: $elColor2;
 		width: 24%;
 		float: left;
 		margin-bottom: 10px;
@@ -297,7 +322,7 @@ ul{
 		ul{
 			padding: 10px;
 			background: #ccc;
-			color: $elGris;
+			color: $elColor2;
 			@extend %list-reset;
 			@include box-sizing(border-box);
 			li{
@@ -344,7 +369,7 @@ ul{
 		.resultados{
 			float: left;
 			width: 100%;
-			background: lighten($elRojo,6%); /*rojo claro*/
+			background: lighten($elColor5,6%); /*rojo claro*/
 			@include border-radius(3px);
 			overflow: hidden;
 			.res-list{
@@ -358,14 +383,14 @@ ul{
 				}
 			}
 			.res-footer{
-				background: $elRojo; /*rojo*/
+				background: $elColor5; /*rojo*/
 				margin: 0 auto;
 			}
 		}
 	}
 	.widgets2{
 		.twitter{
-			background: $elAzulClaro; /*azul*/
+			background: $elColor4Claro; /*azul*/
 			@include border-radius(3px);
 			text-align: center;
 			float: left;
@@ -436,17 +461,17 @@ ul{
 .tweets-container {
 	.single-tweet {
 		font-size: 12px;
-		color: darken($elAzulClaro,30%);
+		color: darken($elColor4Claro,30%);
 		background: #fff;
-		border-bottom: 1px solid lighten($elAzulClaro,25%); 
+		border-bottom: 1px solid lighten($elColor4Claro,25%); 
 		@include box-sizing(border-box);
 		padding: 3px 5px;
 		margin: 0 3px;
 		a {
-			color: $elAzulClaro;
+			color: $elColor4Claro;
 			@extend %link-reset;
 			&:hover {
-				color: darken($elAzulClaro,20%);
+				color: darken($elColor4Claro,20%);
 			}
 		}
 	}
@@ -466,7 +491,7 @@ ul{
 	float: left;
 	width: 100%;
 	@include user-select(none);
-	background: $elAmarillo;
+	background: $elColor3;
 	@include border-radius(3px);
 }
 .aud-head {
@@ -496,7 +521,7 @@ ul{
     display: inline-block;
 	text-decoration: none;
     padding: 2px 7px;
-    background: darken($elAmarillo,10%);
+    background: darken($elColor3,10%);
     @include border-radius(15px);
 	@include box-sizing(border-box);
     &:hover {
@@ -513,13 +538,13 @@ ul{
 }
 .audio_container {
 	height: 1px;
-	background: $elGris;
+	background: $elColor2;
 	position: relative;
 }
 .audio_thingie {
 	height: 10px;
 	width: 10px;
-	background: darken($elGris,10%);
+	background: darken($elColor2,10%);
 	position: absolute;
 	top: -5px;
 	left: -5px;
@@ -568,7 +593,7 @@ ul{
 	}
 }
 .pie{
-	background: $elGris;
+	background: $elColor2;
 	color: #fff;
 	font-size: 12px;
 	margin-top: 10px;
@@ -670,7 +695,7 @@ ul{
   li {
     a {
       transition: all 100ms ease-in-out 0s;
-      background-color: lighten($elGris,50%);
+      background-color: lighten($elColor2,50%);
       border-radius: 5px 5px 5px 5px;
       color: #69696E;
       display: block;
@@ -683,12 +708,12 @@ ul{
       text-decoration: none;
       width: 30px;
       &:hover {
-        background-color: $elVerde;
+        background-color: $elColor1;
         color: #fff;
       }
     }
     &.active a {
-      background-color: $elVerde;
+      background-color: $elColor1;
       color: #fff;
       &:hover {
         color: #fff;
@@ -697,14 +722,12 @@ ul{
   }
 }
 
-/**
-/* Chica del Día
-*/
+/* ------------------------------------------------------------------------------- CHICA DEL DÍA */
 .widgets3{
 	.foto{
 		float: left;
 		width: 100%;
-		background: $elVerde;
+		background: $elColor1;
 		@include border-radius(3px);
 		.foto-head {
 			margin-top: 0;
@@ -719,12 +742,10 @@ ul{
 	}
 }
 
-/******
-nota
-*/
+/* ------------------------------------------------------------------------------- NOTA */
 
 .related-nota {
-		background: $elVerde;
+		background: $elColor1;
 		width: 60%;
 		position: relative;
 		float: left;
@@ -782,3 +803,62 @@ nota
 		}
 
 	}
+
+/* ------------------------------------------------------------------------------- CALENDARIO */
+.calendario {
+	overflow: hidden;
+	background: $elColor4Claro;
+	@include border-radius(3px);
+	@include user-select(none);
+	.activo {
+		@include transition(background, 0.5s);
+		background: darken($elColor4Claro,10%);
+		&:hover {
+			background: darken($elColor4Claro,10%);
+		}
+	}
+}
+
+.calday {
+	width: 33.3%;
+	padding: 7px 0;
+	font-size: 17px;
+	float: left;
+	color: #fff;
+	cursor: pointer;
+	text-align: center;
+	border-bottom: 5px solid darken($elColor4Claro,10%);
+	@include box-sizing(border-box);
+	&:hover {
+		background: lighten($elColor4Claro,3%);
+	}
+}
+
+.calevent {
+	display: none;
+	float: left;
+	width: 100%;
+	color: #fff;
+	background: darken($elColor4Claro,10%);
+	table {
+		width: 100%;
+		background: lighten($elColor3,7%);
+		thead {
+			background: darken($elColor3,5%);
+			font-weight: bold;
+		}
+		tbody, thead {
+			text-align: center;
+		}
+		tbody {
+			font-weight: lighter;
+			tr:nth-child(odd) {
+				background: lighten($elColor3,13%);
+			}
+		}
+		td {
+			padding: 5px;
+			@include box-sizing(border-box);
+		}
+	}
+}

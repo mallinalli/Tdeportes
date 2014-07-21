@@ -5,7 +5,7 @@ Template Name: galeriaPage
 ?>
 <?php get_header(); ?>
 <div class="contenido">
-	<h2 class="section-header">Chica del Día</h2>
+	<h2 class="section-header"><span>Chica del Día</span></h2>
   <div class="infografias clearfix">
 		<?php 
   		$args = array( 'numberposts' => '50', 'post_type' => 'infografia', 'post_status' => 'publish' );

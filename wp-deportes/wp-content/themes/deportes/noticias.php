@@ -5,7 +5,7 @@ Template Name: noticiasPage
 ?>
 <?php get_header(); ?>
     <div class="contenido">
-      	<h2 class="section-header">Noticias</h2>
+      	<h2 class="section-header"><span>Noticias</span></h2>
      	<?php 
       /*Un contador de 0 a 2 (3 últimos días)*/
      	for( $i = 0; $i <= 9; $i++ ){

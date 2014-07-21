@@ -419,3 +419,18 @@ function streamTrack(duracion,elid){
   }); /*SC.stream*/
 
 } /*streamtrack*/
+
+/* CALENDARIO ----------------------------------------------------------------------------------------------------*/
+$('.calday').on('click',function(){
+  elEvent = $(this).index('.calday');
+  /*elRenglon = ( Math.ceil( ( $(this).index('.calday') + 1 )/3 ) ) - 1;*/
+  if ( $(this).data('calfecha') != $('.fechactiva').attr('id') ) {
+    $('.activo').removeClass('activo');
+    $(this).toggleClass('activo');
+    $('.fechactiva').slideToggle().removeClass('fechactiva');
+    $( '#'+$(this).data('calfecha') ).addClass('fechactiva').slideToggle();
+  } else {
+    $(this).toggleClass('activo');
+    $('.fechactiva').slideToggle().toggleClass('fechactiva');
+  }
+});
