@@ -64,7 +64,7 @@
             <li class="spacer"></li>
             <li><a href="<?php echo home_url(); ?>/local">Local</a></li>
             <li><a href="<?php echo home_url(); ?>/otros-deportes">Otros Deportes</a></li>
-            <!-- <li><a href="<?php /*echo home_url();*/ ?>/calendario">Calendario</a></li> -->
+            <li><a href="<?php echo home_url(); ?>/calendario">Calendario</a></li>
             
           </ul>
         </div>

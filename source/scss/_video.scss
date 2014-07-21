@@ -9,7 +9,7 @@
 }
 
 .home-video-component {
-  background: lighten($elRojo,6%);
+  background: lighten($elColor5,6%);
   overflow: hidden;
   @include border-radius(3px);
 }
@@ -20,7 +20,7 @@
 }
 
 .video-menu-wrapper {
-  background: $elRojo;
+  background: $elColor5;
   width: 200%;
   color: #fff;
   margin-bottom: 10px;
@@ -30,7 +30,7 @@
     background: #fff;
     width: 50%;
     float: left;
-    background: lighten($elRojo,6%);
+    background: lighten($elColor5,6%);
     header {
       margin: 5px 0 10px 5px;
       font-size: 18px;
@@ -91,7 +91,7 @@
 .desk-home-video-component {
   height: 300px;
   overflow: hidden;
-  background: lighten($elRojo,6%);
+  background: lighten($elColor5,6%);
   @include border-radius(3px);
 }
 
@@ -107,7 +107,7 @@
   height: 100%;
   text-align: center;
   float: left;
-  background: $elRojo;
+  background: $elColor5;
   cursor: pointer;
   &:before, &:after {
     content: '';
@@ -139,7 +139,7 @@
     background: #fff;
     width: 100%;
     float: left;
-    background: lighten($elRojo,6%);
+    background: lighten($elColor5,6%);
     header {
       margin: 5px 0 5px 5px;
       font-size: 18px;

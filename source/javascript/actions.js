@@ -63,104 +63,6 @@ $('.day-cont').on('click','.day',function(){
   });
 });
 
-/**
-  /* ======================================
-  /* AQUÍ COMIENZA EL PLUGIN DE FOOTBALL.DB (En construcción)
-  /* ======================================
-  */
-/*$.getJSON('http://footballdb.herokuapp.com/api/v1/event/world.2014/rounds?callback=?', function(data) {
-  for (var i = 1; i <= data.rounds.length; i++) {
-    $.getJSON('http://footballdb.herokuapp.com/api/v1/event/world.2014/round/'+i+'?callback=?', function(ronda) {
-      console.log(ronda);
-    });
-  }
-});*/
-
-/**
-  /* ===========================
-  /* AQUÍ COMIENZA EL CALENDARIO
-  /* ===========================
-  */
-
-$.getJSON(themeURL+'/includes/calendario.json', function(data) {
-  var cData = data.fechas;
-  var lastFecha;
-  $('.cal-fecha').on('click',function(){
-    if ($(this).hasClass('cal-selected')) {
-      $(this).toggleClass('cal-selected');
-      
-      calKill();
-    } else {
-      $('.cal-selected').removeClass('cal-selected');
-      $(this).toggleClass('cal-selected');
-      
-      calKill();
-      var evaluando = $(this).index('.cal-fecha');
-      if (evaluando >= 0 && evaluando < 3) {
-        calEvent(2,$(this));
-      } else if (evaluando >= 3 && evaluando < 6) {
-        calEvent(5,$(this));
-      } else if (evaluando >= 6 && evaluando < 9) {
-        calEvent(8,$(this));
-      } else if (evaluando >= 9 && evaluando < 12) {
-        calEvent(11,$(this));
-      } else if (evaluando >= 12 && evaluando < 15) {
-        calEvent(14,$(this));
-      } else if (evaluando >= 15 && evaluando < 18) {
-        calEvent(17,$(this));
-      } else if (evaluando >= 18 && evaluando < 21) {
-        calEvent(20,$(this));
-      } else if (evaluando >= 21 && evaluando < 24) {
-        calEvent(23,$(this));
-      }
-    }
-  });
-
-  function calParse(day){
-    for (var i = 0; i < cData.length; i++) {
-      if (day == cData[i].dia) {
-        var eldia = cData[i];
-      };
-    }
-    return eldia;
-  };
-
-  function calEvent(posicion,este){
-    var cSource = calParse(este.data('cdate'));
-    var $equipos = '';
-    if (cSource != undefined) {
-      for (var i = 0; i < cSource.partidos.length; i++) {
-        /*añadir solución local*/
-        $equipos += '<tr><td><img src="'+themeURL+'/'+cSource.partidos[i].equipos[0].bandera+'" alt="'+cSource.partidos[i].equipos[0].nombre+'"></td><td><strong>'+cSource.partidos[i].equipos[0].nombre+'</strong></td><td>vs</td><td><img src="'+themeURL+'/'+cSource.partidos[i].equipos[1].bandera+'" alt="'+cSource.partidos[i].equipos[1].nombre+'"></td><td><strong>'+cSource.partidos[i].equipos[1].nombre+'</strong></td><td>'+cSource.partidos[i].hora+'</td><td>'+cSource.partidos[i].grupo+'</td><td>'+cSource.partidos[i].estadio+'</td></tr>';
-      }
-    } else {
-      switch (este.data('cdate')) {
-        case 27:
-          $equipos += "<tr><td><i>Día de descanso.</i></td></tr>";
-          break;
-        /*case 28:
-          $equipos += "<tr><td><i>Octavos de final.</i></td></tr>";
-          break;
-        case 29:
-          $equipos += "<tr><td><i>Octavos de final.</i></td></tr>";
-          break;
-        case 30:
-          $equipos += "<tr><td><i>Octavos de final.</i></td></tr>";
-          break;*/
-      }
-    }
-    $('.cal-fecha:eq('+posicion+')').after('<div class="cal-cont hidden"><table><tbody>'+$equipos+'</tbody></table></div>');
-    $('.cal-cont').hide().removeClass('hidden').slideToggle();
-  };
-
-  function calKill(){
-    $('.cal-cont').addClass('removeme').removeClass('cal-cont');
-   $('.removeme').slideToggle(500,function(){
-    $(this).remove();
-   });
-  }
-});
-
  /**
    /* ====================================
    /* AQUÍ COMIENZA EL COMPONENTE DE VIDEO
@@ -517,3 +419,18 @@ function streamTrack(duracion,elid){
   }); /*SC.stream*/
 
 } /*streamtrack*/
+
+/* CALENDARIO ----------------------------------------------------------------------------------------------------*/
+$('.calday').on('click',function(){
+  elEvent = $(this).index('.calday');
+  /*elRenglon = ( Math.ceil( ( $(this).index('.calday') + 1 )/3 ) ) - 1;*/
+  if ( $(this).data('calfecha') != $('.fechactiva').attr('id') ) {
+    $('.activo').removeClass('activo');
+    $(this).toggleClass('activo');
+    $('.fechactiva').slideToggle().removeClass('fechactiva');
+    $( '#'+$(this).data('calfecha') ).addClass('fechactiva').slideToggle();
+  } else {
+    $(this).toggleClass('activo');
+    $('.fechactiva').slideToggle().toggleClass('fechactiva');
+  }
+});
