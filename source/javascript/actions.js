@@ -6,7 +6,6 @@ $(document).ready(function(){
           fallbackToLetter: true,
           watch: true
       });
-      console.log('elipsiando');
   };
   thElipsis();
   /*Botones para compartir en redes sociales -----------------------------------------------------------------------*/
@@ -72,8 +71,6 @@ var elCanalDeYoutubeQueQuieresVer = 'canalpuebla';
 
 $.getJSON('https://gdata.youtube.com/feeds/api/users/'+elCanalDeYoutubeQueQuieresVer+'/uploads/?max-results=50&q=brasil&alt=json', function(data) {
   var listaInicial = data.feed.entry;
-
-console.log(listaInicial)
   var elvideo = [];
   /*for (var i = 0; i < listaInicial.length; i++) {
     if (listaInicial[i].content.$t.indexOf('brasil2014') > 0) {

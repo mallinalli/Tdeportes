@@ -1,44 +1,5 @@
         <aside class="lateral clearfix">
           <div class="widgets1 clearfix">
-            <!--div class="cuenta hlpr-mr">
-              <?php
-                $test = date_create();
-                /*Día - Mes - Año  Hora - Minuto - Segundo*/
-
-                /*Comprueba la fecha futura más reciente*/
-                function lasfechas(){
-                  $counter = 0;
-                  
-                  $fechas = array('13-07-2014 21:00:00');
-                  
-                  $fechaActual = date_create();
-
-                  $fechaOtra = date_create( $fechas[ $counter ] );
-
-                  if ($fechaActual > $fechaOtra) {
-                    $counter++;
-                  }
-                  
-                  return $fechaOtra;
-                }
-
-                $anotherTest = lasfechas();
-                $f1 = date_format($test,'Y-m-d  H:i:s');
-                $f2 = date_format($anotherTest,'Y-m-d  H:i:s');
-                
-                $purinto = date_diff($test,$anotherTest);
-              ?>
-              <a href="http://brasil.periodicodigital.mx/seleccion-nacional/">Esto va a Google</a>
-              <div class="count-title">Faltan:</div>
-              <div class="clearfix">
-                <div class="count-num"><span id="day"><?php echo $purinto->format('%a'); ?></span> días</div>
-                <div class="count-num"><span id="hour"><?php echo $purinto->format('%h'); ?></span> horas</div>
-                <div class="count-num"><span id="min"><?php echo $purinto->format('%i'); ?></span> min</div>
-                <div class="count-num"><span id="sec"><?php echo $purinto->format('%s'); ?></span> seg</div>
-              </div>
-              <div class="count-foot">Para la final del Mundial</div>
-              <input id="timer_sign" type="hidden" data-sign="<?php echo $purinto->format('%R'); ?>">
-            </div-->
             <div class="complemento resultados">
               <h2 class="res-head">Últimos Resultados</h2>
               <div class="res-list">
@@ -56,27 +17,7 @@
               </div>
               <h3 class="res-footer">  </h3>
             </div>
-            <div class="aside-banner">
-                <!--/* Publicidad */-->
-                <!--/* Revive Adserver Javascript Tag v3.0.4 */-->
-
-                <script type='text/javascript'><!--//<![CDATA[
-                   var m3_u = (location.protocol=='https:'?'https://www.bnrspd.dreamhosters.com/revive/www/delivery/ajs.php':'http://www.bnrspd.dreamhosters.com/revive/www/delivery/ajs.php');
-                   var m3_r = Math.floor(Math.random()*99999999999);
-                   if (!document.MAX_used) document.MAX_used = ',';
-                   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
-                   document.write ("?zoneid=34");
-                   document.write ('&amp;cb=' + m3_r);
-                   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
-                   document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
-                   document.write ("&amp;loc=" + escape(window.location));
-                   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
-                   if (document.context) document.write ("&context=" + escape(document.context));
-                   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
-                   document.write ("'><\/scr"+"ipt>");
-                //]]>--></script><noscript><a href='http://www.bnrspd.dreamhosters.com/revive/www/delivery/ck.php?n=acd12e5e&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='http://www.bnrspd.dreamhosters.com/revive/www/delivery/avw.php?zoneid=34&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=acd12e5e' border='0' alt='' /></a></noscript>
-
-              </div>
+            <div class="aside-banner"></div>
           </div>
           <div class="widgets2 clearfix">
             <div class="complemento twitter hlpr-mr">
@@ -123,27 +64,7 @@
                 ?>
               </div>
             </div>
-            <div class="aside-banner">
-              <!--/* Publicidad */-->
-              <!--/* Revive Adserver Javascript Tag v3.0.4 */-->
-
-              <script type='text/javascript'><!--//<![CDATA[
-                 var m3_u = (location.protocol=='https:'?'https://www.bnrspd.dreamhosters.com/revive/www/delivery/ajs.php':'http://www.bnrspd.dreamhosters.com/revive/www/delivery/ajs.php');
-                 var m3_r = Math.floor(Math.random()*99999999999);
-                 if (!document.MAX_used) document.MAX_used = ',';
-                 document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
-                 document.write ("?zoneid=35");
-                 document.write ('&amp;cb=' + m3_r);
-                 if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
-                 document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
-                 document.write ("&amp;loc=" + escape(window.location));
-                 if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
-                 if (document.context) document.write ("&context=" + escape(document.context));
-                 if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
-                 document.write ("'><\/scr"+"ipt>");
-              //]]>--></script><noscript><a href='http://www.bnrspd.dreamhosters.com/revive/www/delivery/ck.php?n=a49d0f17&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='http://www.bnrspd.dreamhosters.com/revive/www/delivery/avw.php?zoneid=35&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a49d0f17' border='0' alt='' /></a></noscript>
-
-            </div>
+            <div class="aside-banner"></div>
           </div>
         </aside>
       </div>
@@ -231,17 +152,6 @@
           $(document).ready(function(){
             $('.cuerponota').find('iframe').wrap('<center><div class="ytvideo"></div></center>');
           });
-        </script>
-        <?php /*Analytics*/ ?>
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-          ga('create', 'UA-50277207-2', 'periodicodigital.mx');
-          ga('send', 'pageview');
-
         </script>
     </body>
 </html>

@@ -31,7 +31,7 @@ Template Name: calendarioPage
     				<td>Querétaro</td>
     				<td><img src="<?php echo get_template_directory_uri(); ?>/img/flags/unam.png" width="30px"></td>
     				<td>UNAM</td>
-    				<td>Estadio La Corregidora</td>
+    				<td class="stadium">Estadio La Corregidora</td>
     			</tr>
     			<tr>
     				<td>21:30</td>
@@ -39,7 +39,7 @@ Template Name: calendarioPage
     				<td>Tijuana</td>
     				<td><img src="<?php echo get_template_directory_uri(); ?>/img/flags/puebla.png" width="30px"></td>
     				<td>Puebla</td>
-    				<td>Estadio Caliente</td>
+    				<td class="stadium">Estadio Caliente</td>
     			</tr>
     		</tbody>
     		<thead>
@@ -54,7 +54,7 @@ Template Name: calendarioPage
     				<td>Veracruz</td>
     				<td><img src="<?php echo get_template_directory_uri(); ?>/img/flags/slaguna.png" width="30px"></td>
     				<td>S.Laguna</td>
-    				<td>Estadio Luis Pirata Fuente</td>
+    				<td class="stadium">Estadio Luis Pirata Fuente</td>
     			</tr>
     			<tr>
     				<td>17:00</td>
@@ -62,7 +62,7 @@ Template Name: calendarioPage
     				<td>Cruz Azul</td>
     				<td><img src="<?php echo get_template_directory_uri(); ?>/img/flags/pachuca.png" width="30px"></td>
     				<td>Pachuca</td>
-    				<td>Estadio Azul</td>
+    				<td class="stadium">Estadio Azul</td>
     			</tr>
     			<tr>
     				<td>19:00</td>
@@ -70,7 +70,7 @@ Template Name: calendarioPage
     				<td>Monterrey</td>
     				<td><img src="<?php echo get_template_directory_uri(); ?>/img/flags/leonesnegros.png" width="30px"></td>
     				<td>Leones Negros</td>
-    				<td>Estadio Tecnológico</td>
+    				<td class="stadium">Estadio Tecnológico</td>
     			</tr>
     			<tr>
     				<td>20:06</td>
@@ -78,7 +78,7 @@ Template Name: calendarioPage
     				<td>León</td>
     				<td><img src="<?php echo get_template_directory_uri(); ?>/img/flags/america.png" width="30px"></td>
     				<td>América</td>
-    				<td>Estadio Nou Camp</td>
+    				<td class="stadium">Estadio Nou Camp</td>
     			</tr>
     			<tr>
     				<td>21:00</td>
@@ -86,7 +86,7 @@ Template Name: calendarioPage
     				<td>Atlas</td>
     				<td><img src="<?php echo get_template_directory_uri(); ?>/img/flags/uanl.png" width="30px"></td>
     				<td>UANL</td>
-    				<td>Estadio Jalisco</td>
+    				<td class="stadium">Estadio Jalisco</td>
     			</tr>
     		</tbody>
     		<thead>
@@ -101,7 +101,7 @@ Template Name: calendarioPage
     				<td>Toluca</td>
     				<td><img src="<?php echo get_template_directory_uri(); ?>/img/flags/mmorelia.png" width="30px"></td>
     				<td>M. Morelia</td>
-    				<td>Estadio Nemesio Diez</td>
+    				<td class="stadium">Estadio Nemesio Diez</td>
     			</tr>
     			<tr>
     				<td>17:00</td>
@@ -109,7 +109,7 @@ Template Name: calendarioPage
     				<td>Guadalajara</td>
     				<td><img src="<?php echo get_template_directory_uri(); ?>/img/flags/jaguares.png" width="30px"></td>
     				<td>Jaguares</td>
-    				<td>Estadio Omnilife</td>
+    				<td class="stadium">Estadio Omnilife</td>
     			</tr>
     		</tbody>
     	</table>
@@ -128,7 +128,7 @@ Template Name: calendarioPage
     				<td>M. Morelia</td>
     				<td><img src="<?php echo get_template_directory_uri(); ?>/img/flags/atlas.png" width="30px"></td>
     				<td>Atlas</td>
-    				<td>Estadio Morelos</td>
+    				<td class="stadium">Estadio Morelos</td>
     			</tr>
     			<tr>
     				<td>21:30</td>
@@ -136,7 +136,7 @@ Template Name: calendarioPage
     				<td>S. Laguna</td>
     				<td><img src="<?php echo get_template_directory_uri(); ?>/img/flags/cruzazul.png" width="30px"></td>
     				<td>Cruz Azul</td>
-    				<td>Estadio Corona</td>
+    				<td class="stadium">Estadio Corona</td>
     			</tr>
     		</tbody>
     		<thead>
@@ -151,7 +151,7 @@ Template Name: calendarioPage
     				<td>América</td>
     				<td><img src="<?php echo get_template_directory_uri(); ?>/img/flags/tijuana.png" width="30px"></td>
     				<td>Tijuana</td>
-    				<td>Azteca Stadium</td>
+    				<td class="stadium">Azteca Stadium</td>
     			</tr>
     			<tr>
     				<td>17:00</td>
@@ -159,7 +159,7 @@ Template Name: calendarioPage
     				<td>Puebla</td>
     				<td><img src="<?php echo get_template_directory_uri(); ?>/img/flags/veracruz.png" width="30px"></td>
     				<td>Veracruz</td>
-    				<td>Estadio Cuauhtémoc</td>
+    				<td class="stadium">Estadio Cuauhtémoc</td>
     			</tr>
     			<tr>
     				<td>17:00</td>
@@ -167,7 +167,7 @@ Template Name: calendarioPage
     				<td>UANL</td>
     				<td><img src="<?php echo get_template_directory_uri(); ?>/img/flags/leon.png" width="30px"></td>
     				<td>León</td>
-    				<td>Estadio Universitario</td>
+    				<td class="stadium">Estadio Universitario</td>
     			</tr>
     			<tr>
     				<td>20:06</td>
@@ -175,7 +175,7 @@ Template Name: calendarioPage
     				<td>Pachuca</td>
     				<td><img src="<?php echo get_template_directory_uri(); ?>/img/flags/monterrey.png" width="30px"></td>
     				<td>Monterrey</td>
-    				<td>Estadio Hildago</td>
+    				<td class="stadium">Estadio Hildago</td>
     			</tr>
     			<tr>
     				<td>21:00</td>
@@ -183,7 +183,7 @@ Template Name: calendarioPage
     				<td>Jaguares</td>
     				<td><img src="<?php echo get_template_directory_uri(); ?>/img/flags/toluca.png" width="30px"></td>
     				<td>Toluca</td>
-    				<td>Estadio Victor Manuel Reyna</td>
+    				<td class="stadium">Estadio Victor Manuel Reyna</td>
     			</tr>
     		</tbody>
     		<thead>
@@ -198,7 +198,7 @@ Template Name: calendarioPage
     				<td>UNAM</td>
     				<td><img src="<?php echo get_template_directory_uri(); ?>/img/flags/guadalajara.png" width="30px"></td>
     				<td>Guadalajara</td>
-    				<td>Estadio Olímpico Universitario</td>
+    				<td class="stadium">Estadio Olímpico Universitario</td>
     			</tr>
     			<tr>
     				<td>17:00</td>
@@ -206,7 +206,7 @@ Template Name: calendarioPage
     				<td>Leones Negros</td>
     				<td><img src="<?php echo get_template_directory_uri(); ?>/img/flags/queretaro.png" width="30px"></td>
     				<td>Querétaro</td>
-    				<td>Estadio Jalisco</td>
+    				<td class="stadium">Estadio Jalisco</td>
     			</tr>
     		</tbody>
     	</table>
@@ -226,7 +226,7 @@ Template Name: calendarioPage
     				<td>Querétaro</td>
     				<td><img src="<?php echo get_template_directory_uri(); ?>/img/flags/pachuca.png" width="30px"></td>
     				<td>Pachuca</td>
-    				<td>La Corregidora</td>
+    				<td class="stadium">La Corregidora</td>
     			</tr>
     			<tr>
     				<td>21:30</td>
@@ -234,7 +234,7 @@ Template Name: calendarioPage
     				<td>Tijuana</td>
     				<td><img src="<?php echo get_template_directory_uri(); ?>/img/flags/uanl.png" width="30px"></td>
     				<td>UANL</td>
-    				<td>Estadio Caliente</td>
+    				<td class="stadium">Estadio Caliente</td>
     			</tr>
     		</tbody>
     		<thead>
@@ -249,7 +249,7 @@ Template Name: calendarioPage
     				<td>Cruz Azul</td>
     				<td><img src="<?php echo get_template_directory_uri(); ?>/img/flags/veracruz.png" width="30px"></td>
     				<td>Veracruz</td>
-    				<td>Estadio Azul</td>
+    				<td class="stadium">Estadio Azul</td>
     			</tr>
     			<tr>
     				<td>17:00</td>
@@ -257,7 +257,7 @@ Template Name: calendarioPage
     				<td>Puebla</td>
     				<td><img src="<?php echo get_template_directory_uri(); ?>/img/flags/america.png" width="30px"></td>
     				<td>América</td>
-    				<td>Estadio Cuauhtémoc</td>
+    				<td class="stadium">Estadio Cuauhtémoc</td>
     			</tr>
     			<tr>
     				<td>19:00</td>
@@ -265,7 +265,7 @@ Template Name: calendarioPage
     				<td>Monterrey</td>
     				<td><img src="<?php echo get_template_directory_uri(); ?>/img/flags/slaguna.png" width="30px"></td>
     				<td>S. Laguna</td>
-    				<td>Estadio Technológico</td>
+    				<td class="stadium">Estadio Technológico</td>
     			</tr>
     			<tr>
     				<td>20:06</td>
@@ -273,7 +273,7 @@ Template Name: calendarioPage
     				<td>León</td>
     				<td><img src="<?php echo get_template_directory_uri(); ?>/img/flags/mmorelia.png" width="30px"></td>
     				<td>M. Morelia</td>
-    				<td>Estadio León</td>
+    				<td class="stadium">Estadio León</td>
     			</tr>
     			<tr>
     				<td>21:00</td>
@@ -281,7 +281,7 @@ Template Name: calendarioPage
     				<td>Atlas</td>
     				<td><img src="<?php echo get_template_directory_uri(); ?>/img/flags/jaguares.png" width="30px"></td>
     				<td>Jaguares</td>
-    				<td>Estadio Jalisco</td>
+    				<td class="stadium">Estadio Jalisco</td>
     			</tr>
     		</tbody>
     		<thead>
@@ -296,7 +296,7 @@ Template Name: calendarioPage
     				<td>Toluca</td>
     				<td><img src="<?php echo get_template_directory_uri(); ?>/img/flags/unam.png" width="30px"></td>
     				<td>UNAM</td>
-    				<td>Estadio Nemesio Díez Riega</td>
+    				<td class="stadium">Estadio Nemesio Díez Riega</td>
     			</tr>
     			<tr>
     				<td>17:00</td>
@@ -304,7 +304,7 @@ Template Name: calendarioPage
     				<td>Guadalajara</td>
     				<td><img src="<?php echo get_template_directory_uri(); ?>/img/flags/leonesnegros.png" width="30px"></td>
     				<td>Leones Negros</td>
-    				<td>Estadio Omnilife</td>
+    				<td class="stadium">Estadio Omnilife</td>
     			</tr>
     		</tbody>
     	</table>
