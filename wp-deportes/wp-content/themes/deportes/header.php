@@ -48,6 +48,25 @@
             <p class="chromeframe"><h2 style="background-color: #FF5050; color: #fff; padding: 5px 0;">Estás utilizando un navegador <strong>desactualizado</strong>. <a href="http://browsehappy.com/" style="color: #6699FF;">Actualiza tu navegador</h2></a></p>
         <![endif]-->
       <header class="main-header">
+        <div class="top-banner">
+          <!--/* Revive Adserver Javascript Tag v3.0.4 */-->
+
+          <script type='text/javascript'><!--//<![CDATA[
+             var m3_u = (location.protocol=='https:'?'https://www.bnrspd.dreamhosters.com/revive/www/delivery/ajs.php':'http://www.bnrspd.dreamhosters.com/revive/www/delivery/ajs.php');
+             var m3_r = Math.floor(Math.random()*99999999999);
+             if (!document.MAX_used) document.MAX_used = ',';
+             document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+             document.write ("?zoneid=37");
+             document.write ('&amp;cb=' + m3_r);
+             if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+             document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+             document.write ("&amp;loc=" + escape(window.location));
+             if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+             if (document.context) document.write ("&context=" + escape(document.context));
+             if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+             document.write ("'><\/scr"+"ipt>");
+          //]]>--></script><noscript><a href='http://www.bnrspd.dreamhosters.com/revive/www/delivery/ck.php?n=a3434248&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='http://www.bnrspd.dreamhosters.com/revive/www/delivery/avw.php?zoneid=37&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a3434248' border='0' alt='' /></a></noscript>
+        </div>
         <div class="contenedor logo">
           <a href="<?php echo home_url(); ?>"></a>
         </div>
@@ -70,4 +89,3 @@
         </div>
       </header>
       <div class="contenedor clearfix">
-        <div class="top-banner"></div>
