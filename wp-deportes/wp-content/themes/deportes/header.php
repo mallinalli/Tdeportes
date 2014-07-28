@@ -10,8 +10,14 @@
         <?php if( is_single() ){ ?>
           <title><?php wp_title(''); ?> | <?php echo get_bloginfo('name'); ?></title>
           <meta name="description" content="<?php wp_title(''); ?>">
-          <?php $url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID, 'nota-large') ); ?>
-          <meta name="og:image" content="<?php echo $url[0] ?>">
+          <?php
+            if( has_post_thumbnail() ) {
+              $thumbnail_id = get_post_thumbnail_id($post->ID);
+              $thumbnail_details = wp_get_attachment($thumbnail_id); 
+              $thumbnail_src_display = wp_get_attachment_image_src( $thumbnail_id, 'nota-large' );
+            }
+          ?>
+          <meta name="og:image" content="<?php echo $thumbnail_src_display[0]; ?>">
         <?php }else{ ?>
           <title><?php echo get_bloginfo('name'); ?></title>
           <meta name="description" content="Micrositio para el Mundial Brasil 2014, por Tribuna Comunicación&reg;">

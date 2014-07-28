@@ -46,8 +46,7 @@
           		$thumbnail_id = get_post_thumbnail_id($post->ID);
           		$thumbnail_details = wp_get_attachment($thumbnail_id); 
           		$thumbnail_src_display = wp_get_attachment_image_src( $thumbnail_id, 'nota-large' );
-          		//$thumbnail_src_lightbox = wp_get_attachment_image_src( $thumbnail_id, 'nota-full' );
-          		?>          		
+          		?>
           		<img src="<?php echo $thumbnail_src_display[0]; ?>" alt="img">
           		<p class="pie-foto"><?php echo $thumbnail_details['caption']; ?></p>
           		<?php endif; ?>
