@@ -1,6 +1,7 @@
         <aside class="lateral clearfix">
+
           <div class="widgets1 clearfix">
-            <div class="complemento resultados">
+            <div class="complemento resultados hlpr-mr">
               <h2 class="res-head">Últimos Resultados</h2>
               <div class="res-list">
                 <ul>
@@ -37,6 +38,7 @@
               //]]>--></script><noscript><a href='http://www.bnrspd.dreamhosters.com/revive/www/delivery/ck.php?n=a648e09e&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='http://www.bnrspd.dreamhosters.com/revive/www/delivery/avw.php?zoneid=41&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a648e09e' border='0' alt='' /></a></noscript>
             </div>
           </div>
+
           <div class="widgets2 clearfix">
             <div class="complemento twitter hlpr-mr">
               <h2>
@@ -49,16 +51,37 @@
               </div>
               <a href="#" class="moretweets">Más...</a>
             </div>
+
+            <div class="aside-banner">
+              <!--/* Revive Adserver Javascript Tag v3.0.4 */-->
+
+              <script type='text/javascript'><!--//<![CDATA[
+                 var m3_u = (location.protocol=='https:'?'https://www.bnrspd.dreamhosters.com/revive/www/delivery/ajs.php':'http://www.bnrspd.dreamhosters.com/revive/www/delivery/ajs.php');
+                 var m3_r = Math.floor(Math.random()*99999999999);
+                 if (!document.MAX_used) document.MAX_used = ',';
+                 document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+                 document.write ("?zoneid=42");
+                 document.write ('&amp;cb=' + m3_r);
+                 if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+                 document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+                 document.write ("&amp;loc=" + escape(window.location));
+                 if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+                 if (document.context) document.write ("&context=" + escape(document.context));
+                 if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+                 document.write ("'><\/scr"+"ipt>");
+              //]]>--></script><noscript><a href='http://www.bnrspd.dreamhosters.com/revive/www/delivery/ck.php?n=a6696850&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='http://www.bnrspd.dreamhosters.com/revive/www/delivery/avw.php?zoneid=42&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a6696850' border='0' alt='' /></a></noscript>
+            </div>
             
-            <div class="complemento audios">
+          </div>
+
+          <div class="widgets3 clearfix">
+            <div class="complemento audios hlpr-mr">
               <h2 class="aud-head">Audios <a href="https://soundcloud.com/tribuna-deportes-oficial"><img src="<?php echo get_template_directory_uri(); ?>/img/propietary/soundcloud.png"></a></h2>
               <div class="audio-list">
                 <?php /*Aquí entran los audios*/ ?>
               </div>
               <a href="" class="mastracks">Más...</a>
             </div>
-          </div>
-          <div class="widgets3 clearfix">
             <div class="complemento foto">
               <h2 class="foto-head">La Chica del Día</h2>
               <div class="fotoshow">
@@ -82,26 +105,8 @@
                 ?>
               </div>
             </div>
-            <div class="aside-banner">
-              <!--/* Revive Adserver Javascript Tag v3.0.4 */-->
-
-              <script type='text/javascript'><!--//<![CDATA[
-                 var m3_u = (location.protocol=='https:'?'https://www.bnrspd.dreamhosters.com/revive/www/delivery/ajs.php':'http://www.bnrspd.dreamhosters.com/revive/www/delivery/ajs.php');
-                 var m3_r = Math.floor(Math.random()*99999999999);
-                 if (!document.MAX_used) document.MAX_used = ',';
-                 document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
-                 document.write ("?zoneid=42");
-                 document.write ('&amp;cb=' + m3_r);
-                 if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
-                 document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
-                 document.write ("&amp;loc=" + escape(window.location));
-                 if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
-                 if (document.context) document.write ("&context=" + escape(document.context));
-                 if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
-                 document.write ("'><\/scr"+"ipt>");
-              //]]>--></script><noscript><a href='http://www.bnrspd.dreamhosters.com/revive/www/delivery/ck.php?n=a6696850&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='http://www.bnrspd.dreamhosters.com/revive/www/delivery/avw.php?zoneid=42&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a6696850' border='0' alt='' /></a></noscript>
-            </div>
           </div>
+
         </aside>
       </div>
       <footer class="main-footer">

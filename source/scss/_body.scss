@@ -88,11 +88,16 @@ ul{
 	border-radius: 3px;
 	@include box-sizing(border-box);
 }
-.top-banner, .banner-info, .banner-comp, .small-banner, .medium-banner, .aside-banner{
+.top-banner, .medium-banner, .aside-banner{
 	img {
 		max-width: 100%;
+		width: 100%;
 		height: auto;
 	}
+}
+
+.medium-banner {
+	margin: 10px 0;
 }
 
 
@@ -347,7 +352,7 @@ ul{
 .lateral{
 	width: 100%;
 	margin: 0 auto;
-	.resultados,.audios,.twitter,.foto, .aside-banner {
+	.resultados, .twitter, .audios {
 		margin-top: 10px;
 	}
 	.complemento{
@@ -411,9 +416,10 @@ ul{
 			}
 		}
 	}
-	.aside-banner{
-		float: left;
-		width: 100%;
+	.widgets3 {
+		.foto {
+			margin-top: 10px;
+		}
 	}
 }
 

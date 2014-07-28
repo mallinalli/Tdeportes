@@ -50,21 +50,17 @@
 	.complemento{/* Empty Style */}
 	.widgets1{
 		width: 100%;
-		.cuenta, .resultados {
+		.resultados {
 			width: 100%;
+			margin-bottom: 10px;
 		}
 		.cuenta{
 			margin-bottom: 10px;
 		}
-		.resultados{
-			.res-head{/* Empty Style */}
-			.res-list{/* Empty Style */}
-			.res-footer{/* Empty Style */}
-		}
 	}
 	.widgets2{
 		width: 100%;
-		.twitter, .audios {
+		.twitter {
 			width: 100%;
 		}
 		.twitter{
@@ -73,8 +69,11 @@
 		.audios{/* Empty Style */}
 	}
 	.widgets3{
-		.foto{
+		.foto, .audios {
 			width: 100%;
+		}
+		.foto {
+			margin-top: 10px;
 		}
 		.aside-banner{
 			width: 100%;
@@ -88,3 +87,6 @@
 	}
 }
 
+.aside-banner {
+	width: 100%;
+}

@@ -60,32 +60,19 @@
 .lateral{
 	width: 98%;
 	float: left;
-	margin-left: 1%;
-	.complemento{/* Empty Style */}
-	.widgets1, .widgets2, .widgets3 {
-		width: 100%;
-	}
+	margin: 10px  0  0 1%;
 	.widgets1{
 		float: left;
-		margin-bottom: 10px;
 		.cuenta, .resultados {
 			width: 49%;
 		}
-		.cuenta{
-			&.hlpr-mr {
-				margin-right: 2%;
-			}
-		}
 		.resultados{
 			margin: 0;
-			.res-head{/* Empty Style */}
-			.res-list{/* Empty Style */}
-			.res-footer{/* Empty Style */}
 		}
 	}
 	.widgets2{
 		float: left;
-		.twitter, .audios {
+		.twitter {
 			width: 49%;
 			margin-top: 0;
 		}
@@ -94,17 +81,27 @@
 				margin-right: 2%;
 			}
 		}
-		.audios{/* Empty Style */}
 	}
 	.widgets3{
 		float: left;
-		.foto{
+		.foto, .audios {
 			width: 49%;
+		}
+		.foto {
+			margin-top: 0;
+		}
+		.audios {
+			margin-top: 0;
+		}
+	}
+	.widgets1, .widgets2, .widgets3 {
+		width: 100%;
+		& .hlpr-mr {
 			margin-right: 2%;
 		}
-		.aside-banner{
-			width: 49%;
-		}
+	}
+	.widgets2, .widgets3 {
+		margin: 10px 0 0 0;
 	}
 }
 
@@ -113,41 +110,13 @@
 		display: inline-block;
 	}
 }
-.top-banner{
-	width: 99%;
-	margin: 0 0.5% 10px 0.5%;
-}
-.banner-info{
-	width: 66.3%;
+
+/* ------------------------------------------------------------------------------- ESTILOS PARA BANNERS */
+.aside-banner {
 	float: left;
-	img{
-		width: 100%;
-		height: auto;
-	}
-}
-.banner-comp{
-	width: 32.7%;
-	float: left;
-	margin: 0 0 0 1%;
-	img{
-		width: 100%;
-		height: auto;
-	}
+	width: 49%;
 }
 
-.small-banner, .medium-banner, .xsmall-banner {
-	margin: 5px 0;
-}
-
-.top-banner, .aside-banner, .small-banner, .medium-banner, .xsmall-banner {
-	img{
-		width: 100%;
-		height: auto;
-		margin: 0 auto;
-		max-width: 1024px;
-		display: block;
-	}
-}
 
 /* ------------------------------------------------------------------------------- CALENDARIO */
 .stadium {
