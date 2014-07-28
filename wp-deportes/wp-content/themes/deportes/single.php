@@ -32,7 +32,7 @@
               $agencia = get_post_meta( $post->ID , '_post_agencia_nombre' , true );
               $balazo = get_post_meta( $post->ID , '_post_balazo' , true ); 
             ?>
-            <div class="share" data-shurl="<?php echo $shlink ?>" data-shimg="<?php echo $shurl ?>" data-shcap="<?php the_title(); ?>">
+            <div class="share" data-shurl="<?php if( $shlink AND $shlink != '' ){ echo $shlink; } else { echo $shortenthis; } ?>" data-shimg="<?php echo $shurl ?>" data-shcap="<?php the_title(); ?>">
               <ul>
                 <li class="stw"><i class="icon-twitter"></i></li><li class="sfb"><i class="icon-facebook"></i></li><!-- <li class="sgp"><i class="icon-google-plus"></i></li> -->
               </ul>
