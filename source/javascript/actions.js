@@ -9,6 +9,22 @@ $(document).ready(function(){
     }
   });
 
+  sliderTimer = setInterval( function(){ timeSlide() }, 7000 );
+
+  window.way = 1;
+  function timeSlide(){
+    if ( window.sliActMarg == -3 ) {
+      window.way = 0;
+    } if ( window.sliActMarg == 0 ) {
+      window.way = 1;
+    }
+    if ( window.way == 1 ) {
+      sliAnimate('right', window.sliActMarg);
+    } else {
+      sliAnimate('left', window.sliActMarg);
+    }
+  }
+
   function sliAnimate(direction, margen){
     posicion = margen * 100;
     if ( direction == 'right' ) {
