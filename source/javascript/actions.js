@@ -1,5 +1,6 @@
 $(document).ready(function(){
   /* Slider Principal ----------------------------------------------------------------------------------------------*/
+  /*Control de los controles, una función para dominarlos a todos */
   window.sliActMarg = 0;
   $('.sli-control').on('click',function(){
     if ( $(this).hasClass('right') ) {
@@ -9,10 +10,12 @@ $(document).ready(function(){
     }
   });
 
-  sliderTimer = setInterval( function(){ timeSlide() }, 7000 );
+  /*Control del tiempo \(*o* )/  */
+  window.sliderTimer = setInterval( function(){ timeSlide() }, 300 );
 
   window.way = 1;
   function timeSlide(){
+    console.log('running');
     if ( window.sliActMarg == -3 ) {
       window.way = 0;
     } if ( window.sliActMarg == 0 ) {
@@ -25,6 +28,7 @@ $(document).ready(function(){
     }
   }
 
+  /*Control del movimiento ~(°.°)~ */
   function sliAnimate(direction, margen){
     posicion = margen * 100;
     if ( direction == 'right' ) {
@@ -43,6 +47,14 @@ $(document).ready(function(){
       }
     }
   }
+
+  /*Control del Hover, no se me ocurre nada para este... caracol! _@_Y */
+  $('.sli-main').hover(function(){
+    clearInterval(window.sliderTimer);
+  }, function(){
+    console.log('im back')
+    window.sliderTimer = setInterval( function(){ timeSlide() }, 300 );
+  });
 
   /* La Elípsis de los títulos -------------------------------------------------------------------------------------*/
   function thElipsis(){
