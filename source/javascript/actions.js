@@ -1,4 +1,33 @@
 $(document).ready(function(){
+  /* Slider Principal ----------------------------------------------------------------------------------------------*/
+  window.sliActMarg = 0;
+  $('.sli-control').on('click',function(){
+    if ( $(this).hasClass('right') ) {
+      sliAnimate('right', window.sliActMarg);
+    } else {
+      sliAnimate('left', window.sliActMarg);
+    }
+  });
+
+  function sliAnimate(direction, margen){
+    posicion = margen * 100;
+    if ( direction == 'right' ) {
+      if ( window.sliActMarg > -3 ) {
+        window.sliActMarg--;
+        $('.sli-container').stop().animate({
+          marginLeft: (posicion-100)+'%'
+        }); 
+      }
+    } else {
+      if ( window.sliActMarg < 0 ) {
+        window.sliActMarg++;
+        $('.sli-container').stop().animate({
+          marginLeft: (posicion+100)+'%'
+        });
+      }
+    }
+  }
+
   /* La Elípsis de los títulos -------------------------------------------------------------------------------------*/
   function thElipsis(){
       $('.elipseme').dotdotdot({
@@ -35,32 +64,13 @@ $(document).ready(function(){
 
   });
 
-  /*Slide Up-Down Listado de Notas*/
-  $('.day-cont .day-block').first().slideToggle();
-  $('.day-cont .day-block').first().closest('.day-cont').find('i').attr('class','icon-caret-down');
-
-
 });
-
 
 $('.menubutton').on('click','a',function(a){
 	a.preventDefault();
 	$('.navegacion').stop().slideToggle();
 });
-/**
-  /* ====================================
-  /* AQUÍ COMIENZA EL CONTROL DE NOTICIAS
-  /* ====================================
-  */
-$('.day-cont').on('click','.day',function(){
-  $(this).closest('.day-cont').find('.day-block').slideToggle(function(){
-    if ($(this).css('display') != 'none') {
-      $(this).closest('.day-cont').find('i').attr('class','icon-caret-down');
-    } else {
-      $(this).closest('.day-cont').find('i').attr('class','icon-caret-right');
-    }
-  });
-});
+
 
  /**
    /* ====================================
@@ -193,56 +203,6 @@ $.getJSON('https://gdata.youtube.com/feeds/api/users/'+elCanalDeYoutubeQueQuiere
   }
 
 });
-
-/**
-    /* =================================
-    /* AQUÍ COMIENZA LA CUENTA REGRESIVA
-    /* =================================
-    */
-var dateTimer;
-var iDay = parseInt($('#day').html());
-var iHour = parseInt($('#hour').html());
-var iMin = parseInt($('#min').html());
-var iSec = parseInt($('#sec').html());
-
-if ($('#timer_sign').data('sign') == '+') {
-  dateTimerInitiate();
-} else {
-  timerEnded();
-  $('#day').html('0');
-  $('#hour').html('0');
-  $('#min').html('0');
-  $('#sec').html('0');
-}
-
-function dateTimerInitiate(){
-  clearInterval(dateTimer);
-  dateTimer =  setInterval (function(){
-    iSec--;
-    if (iSec === 0 && iMin === 0 && iHour === 0 && iDay === 0) {
-        timerEnded();
-    } else if (iSec === 0) {
-      iSec = 59;
-      iMin--;
-      if (iMin == -1) {
-        iMin = 59;
-        iHour--;
-        if (iHour == -1) {
-          iHour = 23;
-          iDay --;
-          $('#day').html(iDay);
-        }
-        $('#hour').html(iHour);
-      }
-      $('#min').html(iMin);
-    }
-    $('#sec').html(iSec);
-  }, 1000);
-}
-
-function timerEnded(){
-  clearInterval(dateTimer);
-}
 
 /**
     /* =================================

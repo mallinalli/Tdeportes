@@ -111,6 +111,9 @@ ul{
 	display: none;
 }
 
+/* ==========================
+	Notas
+   ========================== */
 .principal, .principales, .nota, .nota-s {
 	margin-bottom: 10px;
 	a {
@@ -118,6 +121,7 @@ ul{
 	}
 }
 .principal{
+	float: left;
 	width: 100%;
 	background: $elColor2;
 	img{
@@ -159,6 +163,32 @@ ul{
 		padding: 5px;
 		height: 50px;
 	}
+}
+/* ------------------------------------------------------------------------------- SLIDER */
+.principal {
+	&.sli-featured {
+		width: 25%;
+	}
+}
+
+.sli-main {
+	overflow: hidden;
+	position: relative;
+}
+
+.sli-control {
+	position: absolute;
+	cursor: pointer;
+	color: blue;
+	padding: 5px;
+	background: #fff;
+	&.right {
+		right: 0;
+	}
+}
+
+.sli-container {
+	width: 400%;
 }
 
 /* ------------------------------------------------------------------------------- CABECERA DE SECCIÓN */

@@ -15,16 +15,28 @@
             $br_home_note_7  = get_option( 'pd_home_note_7' )
             
             );
-            ?>           
-            <div class="principal clearfix">
-              <a href="<?php echo get_permalink( $br_home_note_1 ); ?>">
+            ?>
+
+            <div class="sli-main">
+              <div class="sli-control left">Anterior</div>
+              <div class="sli-control right">Siguiente</div>
+              <div class="sli-container clearfix">
                 <?php
-                    $img = wp_get_attachment_image_src( get_post_thumbnail_id($br_home_note_1), 'nota-large' ); 
+                  for ($i=0; $i <4 ; $i++) { 
                 ?>
-                <img src="<?php echo $img[0]; ?>" alt="#">
-                <p> <?php echo get_the_title($br_home_note_1); ?></p>
-              </a>
+                <div class="principal sli-featured">
+                  <a href="<?php echo get_permalink( $br_home_note_1 ); ?>">
+                    <?php
+                        $img = wp_get_attachment_image_src( get_post_thumbnail_id($br_home_note_1), 'nota-large' ); 
+                    ?>
+                    <img src="<?php echo $img[0]; ?>" alt="#">
+                    <p> <?php echo get_the_title($br_home_note_1); ?></p>
+                  </a>
+                </div>
+                <?php } ?>
+              </div>
             </div>
+
             <div class="medium-banner">
               <!--/* Revive Adserver Javascript Tag v3.0.4 */-->
 
@@ -46,28 +58,25 @@
             </div>
 
             <?php
+            /* ===== El poderoso loop de notas ===== */
             $limite = count($notas)/3 ;
 
             $contador = 0;
 
             for ($i=0; $i < $limite; $i++) {
-            ?>
-            <!--Renglón === Bear In Mind: "hlpr-mr" "hlpr-mr-t" === -->
 
-            <?php 
-
-            for ($j=0; $j < 3; $j++) { 
-              switch ($j) {
-                case '0':
-                  $helper = 'hlpr-mr';
-                  break;
-                case '1':
-                  $helper = 'hlpr-mr-t';
-                  break;
-                case '2':
-                  $helper = '';
-                  break;
-              }
+              for ($j=0; $j < 3; $j++) { 
+                switch ($j) {
+                  case '0':
+                    $helper = 'hlpr-mr';
+                    break;
+                  case '1':
+                    $helper = 'hlpr-mr-t';
+                    break;
+                  case '2':
+                    $helper = '';
+                    break;
+                }
             ?>
             <div class="principales <?php echo $helper; ?>">
               <a href="<?php echo get_permalink( $notas[$j+$contador] ); ?>">
