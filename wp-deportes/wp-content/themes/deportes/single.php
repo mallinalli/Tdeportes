@@ -67,7 +67,7 @@
                 ?>
               </div>
               <div class="comments">
-                <?php /*comments_template();*/ ?>
+                <?php comments_template(); ?>
               </div>
           	</div>
           </div>
