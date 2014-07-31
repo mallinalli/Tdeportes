@@ -11,7 +11,7 @@ $(document).ready(function(){
   });
 
   /*Control del tiempo \(*o* )/  */
-  window.sliderTimer = setInterval( function(){ timeSlide() }, 300 );
+  window.sliderTimer = setInterval( function(){ timeSlide() }, 7000 );
 
   window.way = 1;
   function timeSlide(){
@@ -52,8 +52,7 @@ $(document).ready(function(){
   $('.sli-main').hover(function(){
     clearInterval(window.sliderTimer);
   }, function(){
-    console.log('im back')
-    window.sliderTimer = setInterval( function(){ timeSlide() }, 300 );
+    window.sliderTimer = setInterval( function(){ timeSlide() }, 7000 );
   });
 
   /* La Elípsis de los títulos -------------------------------------------------------------------------------------*/

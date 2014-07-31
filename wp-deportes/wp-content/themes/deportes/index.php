@@ -18,8 +18,8 @@
             ?>
 
             <div class="sli-main">
-              <div class="sli-control left">Anterior</div>
-              <div class="sli-control right">Siguiente</div>
+              <div class="sli-control left"><i class="icon-circle-arrow-left"></i></div>
+              <div class="sli-control right"><i class="icon-circle-arrow-right"></i></div>
               <div class="sli-container clearfix">
                 <?php
                   for ($i=0; $i <4 ; $i++) { 
@@ -30,7 +30,7 @@
                         $img = wp_get_attachment_image_src( get_post_thumbnail_id($br_home_note_1), 'nota-large' ); 
                     ?>
                     <img src="<?php echo $img[0]; ?>" alt="#">
-                    <p> <?php echo get_the_title($br_home_note_1); ?></p>
+                    <p class="sli-over"> <?php echo get_the_title($br_home_note_1); ?></p>
                   </a>
                 </div>
                 <?php } ?>

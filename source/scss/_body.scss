@@ -168,6 +168,7 @@ ul{
 .principal {
 	&.sli-featured {
 		width: 25%;
+		position: relative;
 	}
 }
 
@@ -176,14 +177,35 @@ ul{
 	position: relative;
 }
 
+.sli-over {
+	position: absolute;
+	bottom: 0;
+	background: $elColor2;
+	z-index: 2;
+}
+
 .sli-control {
+	z-index: 1;
 	position: absolute;
 	cursor: pointer;
-	color: blue;
-	padding: 5px;
-	background: #fff;
+	color: rgba(255,255,255,0.3);
+	font-size: 45px;
+	vertical-align: middle;
+	height: 100%;
+	padding: 0 3%;
+	@include user-select(none);
+	@include transition(color, 0.5s);
+	&:hover {
+		color: rgba(255,255,255,0.6);
+	}
 	&.right {
 		right: 0;
+	}
+	&:before, &:after {
+	  content: '';
+	  display: inline-block;
+	  height: 90%;
+	  vertical-align: middle;
 	}
 }
 
