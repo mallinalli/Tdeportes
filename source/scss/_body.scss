@@ -927,3 +927,28 @@ ul{
 .stadium {
 	display: none;
 }
+
+/* ------------------------------------------------------------------------------- ESTACIONES */
+.estaciones {
+	span {
+		color: #fff;
+		font-size: 17px;
+	}
+	span, ul {
+		display: table-cell;
+		vertical-align: bottom;
+	}
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1024px;
+	background: $elColor1;
+	padding: 4px 0;
+	@include border-radius(4px 4px 0 0);
+	ul {
+		padding-left: 15px;
+		@extend %list-reset;
+	}
+	ul a img {
+		height: 25px;
+	}
+}
