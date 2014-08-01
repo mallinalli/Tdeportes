@@ -26,15 +26,16 @@
               <div class="sli-control right"><i class="icon-circle-arrow-right"></i></div>
               <div class="sli-container clearfix">
                 <?php
-                  for ($i=0; $i <4 ; $i++) { 
+                  for ($i=1; $i <= 4 ; $i++) { 
                 ?>
                 <div class="principal sli-featured">
-                  <a href="<?php echo get_permalink( $br_home_note_.$i ); ?>">
+                  <?php $variableMagica = get_option( 'pd_home_note_'.$i ); ?>
+                  <a href="<?php echo get_permalink( $variableMagica ); ?>">
                     <?php
-                        $img = wp_get_attachment_image_src( get_post_thumbnail_id($br_home_note_.$i), 'nota-large' ); 
+                        $img = wp_get_attachment_image_src( get_post_thumbnail_id( $variableMagica ), 'nota-large' ); 
                     ?>
                     <img src="<?php echo $img[0]; ?>" alt="#">
-                    <p class="sli-over"> <?php echo get_the_title($br_home_note_.$i); ?></p>
+                    <p class="sli-over"> <?php echo get_the_title( $variableMagica ); ?></p>
                   </a>
                 </div>
                 <?php } ?>
