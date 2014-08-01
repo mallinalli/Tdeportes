@@ -106,7 +106,7 @@ $('.menubutton').on('click','a',function(a){
    */
 var elCanalDeYoutubeQueQuieresVer = 'canalpuebla';
 
-$.getJSON('https://gdata.youtube.com/feeds/api/users/'+elCanalDeYoutubeQueQuieresVer+'/uploads/?max-results=50&q=brasil&alt=json', function(data) {
+$.getJSON('https://gdata.youtube.com/feeds/api/users/'+elCanalDeYoutubeQueQuieresVer+'/uploads/?max-results=50&q=deportes&alt=json', function(data) {
   var listaInicial = data.feed.entry;
   var elvideo = [];
   /*for (var i = 0; i < listaInicial.length; i++) {
