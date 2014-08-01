@@ -15,7 +15,7 @@ $(document).ready(function(){
 
   window.way = 1;
   function timeSlide(){
-    console.log('running');
+    
     if ( window.sliActMarg == -3 ) {
       window.way = 0;
     } if ( window.sliActMarg == 0 ) {

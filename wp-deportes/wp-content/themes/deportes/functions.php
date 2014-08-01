@@ -69,7 +69,41 @@ function pd_home_settings_page_fn(){
 <?php }
 
 function pd_home_register_settings(){
+    // Add settings section
+    add_settings_section( 'pd_notes_seleccion' , 'Notas - Slider', 'pd_home_display_notes', 'pd-home-settings' );
 
+    $args = array( 'numberposts' => '80', 'post_type' => 'post', 'post_status' => 'publish', 'tax_query' => array(
+          array(
+            'taxonomy' => 'category',
+            'field' => 'slug',
+            'terms' => 'portada',
+            'operator' => 'IN'
+          ) )
+    );
+
+    $recent_posts = wp_get_recent_posts( $args );
+    $recent_posts_array = array();
+    foreach( $recent_posts as $recent ){
+        $recent_posts_array[$recent['ID']] = $recent["post_title"]; 
+    }
+
+    for ($i = 1; $i <= 4; $i++) {
+      $field_args = array(
+        'type'      => 'select',
+        'id'        => 'pd_home_note_' . $i,
+        'name'      => 'pd_home_note_' . $i,
+        'label'     => 'Nota ' . $i,
+        'desc'      => 'Nota ' . $i,
+        'options'   => $recent_posts_array,
+        'default'   => '',
+        'label_for' => 'pd_home_option_number',
+        'class'     => 'css_class'
+      );
+    
+      register_setting('pd_home_settings_group', 'pd_home_note_' . $i , 'pd_home_validate_settings' );
+      add_settings_field( $field_args['id'] , $field_args['label'] , 'pd_home_display_field', 'pd-home-settings', 'pd_notes_seleccion', $field_args );
+    } // end for  
+    
     // Add settings section
     add_settings_section( 'pd_notes_home' , 'Notas - Página principal', 'pd_home_display_notes', 'pd-home-settings' );
 
@@ -88,7 +122,8 @@ function pd_home_register_settings(){
         $recent_posts_array[$recent['ID']] = $recent["post_title"]; 
     }
 
-    for ($i = 1; $i <= 10; $i++) {
+    //
+    for ($i = 5; $i <= 10; $i++) {
       $field_args = array(
         'type'      => 'select',
         'id'        => 'pd_home_note_' . $i,
@@ -105,40 +140,7 @@ function pd_home_register_settings(){
       add_settings_field( $field_args['id'] , $field_args['label'] , 'pd_home_display_field', 'pd-home-settings', 'pd_notes_home', $field_args );
     } // end for
     
-    /* Add settings section
-    add_settings_section( 'pd_notes_seleccion' , 'Notas - Selección Nacional', 'pd_home_display_notes', 'pd-home-settings' );
-
-    $args = array( 'numberposts' => '80', 'post_type' => 'post', 'post_status' => 'publish', 'tax_query' => array(
-          array(
-            'taxonomy' => 'category',
-            'field' => 'slug',
-            'terms' => 'seleccion-nacional', //aquí hay algo!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-            'operator' => 'IN'
-          ) )
-    );
-
-    $recent_posts = wp_get_recent_posts( $args );
-    $recent_posts_array = array();
-    foreach( $recent_posts as $recent ){
-        $recent_posts_array[$recent['ID']] = $recent["post_title"]; 
-    }
-
-    for ($i = 1; $i <= 9; $i++) {
-      $field_args = array(
-        'type'      => 'select',
-        'id'        => 'pd_seleccion_note_' . $i,
-        'name'      => 'pd_seleccion_note_' . $i,
-        'label'     => 'Nota ' . $i,
-        'desc'      => 'Nota ' . $i,
-        'options'   => $recent_posts_array,
-        'default'   => '',
-        'label_for' => 'pd_seleccion_option_number',
-        'class'     => 'css_class'
-      );
-  
-      register_setting('pd_home_settings_group', 'pd_seleccion_note_' . $i , 'pd_home_validate_settings' );
-      add_settings_field( $field_args['id'] , $field_args['label'] , 'pd_home_display_field', 'pd-home-settings', 'pd_notes_seleccion', $field_args );
-    } // end for    */
+      
 }
 
 function pd_home_display_notes($section){}
