@@ -88,7 +88,7 @@ function pd_home_register_settings(){
         $recent_posts_array[$recent['ID']] = $recent["post_title"]; 
     }
 
-    for ($i = 1; $i <= 7; $i++) {
+    for ($i = 1; $i <= 10; $i++) {
       $field_args = array(
         'type'      => 'select',
         'id'        => 'pd_home_note_' . $i,

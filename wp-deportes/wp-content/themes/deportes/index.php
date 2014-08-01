@@ -4,16 +4,20 @@
             <?php
             /*$pd_home_section_1  = get_option( 'pd_home_section_1' );*/
             $br_home_note_1  = get_option( 'pd_home_note_1' );
+            $br_home_note_2  = get_option( 'pd_home_note_2' );
+            $br_home_note_3  = get_option( 'pd_home_note_3' );
+            $br_home_note_4  = get_option( 'pd_home_note_4' );
+
 
             $notas = array(
             
-            $br_home_note_2  = get_option( 'pd_home_note_2' ),
-            $br_home_note_3  = get_option( 'pd_home_note_3' ),
-            $br_home_note_4  = get_option( 'pd_home_note_4' ),
             $br_home_note_5  = get_option( 'pd_home_note_5' ),
             $br_home_note_6  = get_option( 'pd_home_note_6' ),
-            $br_home_note_7  = get_option( 'pd_home_note_7' )
-            
+            $br_home_note_7  = get_option( 'pd_home_note_7' ),
+            $br_home_note_8  = get_option( 'pd_home_note_8' ),
+            $br_home_note_9  = get_option( 'pd_home_note_9' ),
+            $br_home_note_10  = get_option( 'pd_home_note_10' )
+                        
             );
             ?>
 
@@ -25,12 +29,12 @@
                   for ($i=0; $i <4 ; $i++) { 
                 ?>
                 <div class="principal sli-featured">
-                  <a href="<?php echo get_permalink( $br_home_note_1 ); ?>">
+                  <a href="<?php echo get_permalink( $br_home_note_.$i ); ?>">
                     <?php
-                        $img = wp_get_attachment_image_src( get_post_thumbnail_id($br_home_note_1), 'nota-large' ); 
+                        $img = wp_get_attachment_image_src( get_post_thumbnail_id($br_home_note_.$i), 'nota-large' ); 
                     ?>
                     <img src="<?php echo $img[0]; ?>" alt="#">
-                    <p class="sli-over"> <?php echo get_the_title($br_home_note_1); ?></p>
+                    <p class="sli-over"> <?php echo get_the_title($br_home_note_.$i); ?></p>
                   </a>
                 </div>
                 <?php } ?>
