@@ -73,28 +73,30 @@
              document.write ("'><\/scr"+"ipt>");
           //]]>--></script><noscript><a href='http://www.bnrspd.dreamhosters.com/revive/www/delivery/ck.php?n=a3434248&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='http://www.bnrspd.dreamhosters.com/revive/www/delivery/avw.php?zoneid=37&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a3434248' border='0' alt='' /></a></noscript>
         </div>
-        <div class="estaciones clearfix">
-          <span>Escúchanos:</span>
-          <ul>
-            <li>
-              <script>
-                var p1 = 'top=0,left=0,width=250,height=150';
-                var p2 = 'menubar=no,toolbar=no,location=no,';
-                function popStation(cual){
-                  var estacion = window.open('','radio',p1+p2);
-                  if ( cual == 'exa') {
-                    estacion.document.head.innerHTML = '<title>Escucha EXA en línea</title>';
-                    estacion.document.body.innerHTML = '<center><img src="http://www.pdmx.dreamhosters.com/wp-content/themes/periodicodigital/images/logos/logo_exa.png"></center><audio controls autoplay src="http://184.107.179.162:1030/;" style="width:100%;margin-top:15px;"></audio>';
-                  } else {
-                    estacion.document.head.innerHTML = '<title>Escucha La Mejor en línea</title>';
-                    estacion.document.body.innerHTML = '<center><img src="http://www.pdmx.dreamhosters.com/wp-content/themes/periodicodigital/images/logos/logo_lamejor.png"></center><audio controls autoplay src="http://184.107.179.162:1037/;" style="width:100%;margin-top:15px;"></audio>';
+        <div class="upper-bar clearfix">
+          <div class="estaciones">
+            <span>Escúchanos:</span>
+            <ul>
+              <li>
+                <script>
+                  var p1 = 'top=0,left=0,width=250,height=150';
+                  var p2 = 'menubar=no,toolbar=no,location=no,';
+                  function popStation(cual){
+                    var estacion = window.open('','radio',p1+p2);
+                    if ( cual == 'exa') {
+                      estacion.document.head.innerHTML = '<title>Escucha EXA en línea</title>';
+                      estacion.document.body.innerHTML = '<center><img src="http://www.pdmx.dreamhosters.com/wp-content/themes/periodicodigital/images/logos/logo_exa.png"></center><audio controls autoplay src="http://184.107.179.162:1030/;" style="width:100%;margin-top:15px;"></audio>';
+                    } else {
+                      estacion.document.head.innerHTML = '<title>Escucha La Mejor en línea</title>';
+                      estacion.document.body.innerHTML = '<center><img src="http://www.pdmx.dreamhosters.com/wp-content/themes/periodicodigital/images/logos/logo_lamejor.png"></center><audio controls autoplay src="http://184.107.179.162:1037/;" style="width:100%;margin-top:15px;"></audio>';
+                    }
                   }
-                }
-              </script>
-              <a href="javascript: void(0)" onclick="popStation('exa');"><img src="<?php echo get_template_directory_uri(); ?>/img/logos/logo_exa.png" alt="Escucha EXA"></a>
-              <a href="javascript: void(0)" onclick="popStation('lamejor')"><img src="<?php echo get_template_directory_uri(); ?>/img/logos/logo_lamejor.png" alt="Escucha La Mejor"></a>
-            </li>
-          </ul>
+                </script>
+                <a href="javascript: void(0)" onclick="popStation('exa');"><img src="<?php echo get_template_directory_uri(); ?>/img/logos/logo_exa.png" alt="Escucha EXA"></a>
+                <a href="javascript: void(0)" onclick="popStation('lamejor')"><img src="<?php echo get_template_directory_uri(); ?>/img/logos/logo_lamejor.png" alt="Escucha La Mejor"></a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="contenedor logo">
           <a href="<?php echo home_url(); ?>"></a>

@@ -929,24 +929,32 @@ ul{
 }
 
 /* ------------------------------------------------------------------------------- ESTACIONES */
+.upper-bar {
+	margin: 5px auto 0 auto;
+	width: 100%;
+	max-width: 1024px;
+	background: $elColor1;
+	@include border-radius(4px 4px 0 0);
+}
+
+/* ------------------------------------------------------------------------------- ESTACIONES */
 .estaciones {
+	float: right;
+	padding: 4px 5px;
+	@include box-sizing(border-box);
 	span {
 		color: #fff;
-		font-size: 17px;
+		font-size: 16px;
 	}
 	span, ul {
 		display: table-cell;
 		vertical-align: bottom;
 	}
-	margin: 0 auto;
-	width: 100%;
-	max-width: 1024px;
-	background: $elColor1;
-	padding: 4px 0;
-	@include border-radius(4px 4px 0 0);
 	ul {
-		padding-left: 15px;
 		@extend %list-reset;
+		a {
+			margin-left: 10px;
+		}
 	}
 	ul a img {
 		height: 25px;
