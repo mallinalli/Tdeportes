@@ -1,6 +1,7 @@
 body {
   font-family: 'Quattrocento Sans', sans-serif;
   color: $elColor2; /*gris*/
+  background: #1d1d1b; 
   /*background: url(../img/bg2.jpg) no-repeat center center fixed;
   @include background-size (cover);*/
 } 
@@ -175,6 +176,7 @@ ul{
 .sli-main {
 	overflow: hidden;
 	position: relative;
+	max-height: 338px; /*----------------- aquí */
 }
 
 .sli-over {
@@ -333,6 +335,7 @@ ul{
 		text-align: center;
 		display: inline-block;
 		width: 70%;
+		margin: 0 15%;
 	}
 	.cuerponota{
 		font-size: 16.5px;

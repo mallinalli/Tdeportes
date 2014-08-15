@@ -23,7 +23,9 @@
 }
 .contenido{
 	width: 98%;
-	padding-top: 10px;
+	padding-top: 5px; /* Margen al interior del contenedor: */
+	padding-right: 5px; /* Margen a la derecha del contenedor: */
+	padding-left: 5px;
 	.principal{}
 	.principales{
 		margin: 0;
