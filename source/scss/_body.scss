@@ -787,21 +787,20 @@ ul{
 }
 
 /* ------------------------------------------------------------------------------- CHICA DEL DÍA */
-.widgets3{
-	.foto{
-		float: left;
-		width: 100%;
-		background: $elColor1;
-		@include border-radius(3px);
-		.foto-head {
-			margin-top: 0;
-		}
-		.fotoshow {
-			margin-bottom: 15px;
-			text-align: center;
-			img {
-				max-width: 90%;
-			}
+.foto {
+	float: left;
+	width: 100%;
+	background: $elColor1;
+	margin-top: 10px;
+	@include border-radius(3px);
+	.foto-head {
+		margin-top: 0;
+	}
+	.fotoshow {
+		margin-bottom: 15px;
+		text-align: center;
+		img {
+			max-width: 90%;
 		}
 	}
 }
