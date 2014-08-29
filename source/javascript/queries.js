@@ -10,7 +10,7 @@ enquire
 		$('.navegacion').css('display','none');
 	} 
     /*añadir solución local*/
-    $('.logo').find('a').html('<img src="'+themeURL+'/img/logo-s.jpg" alt="Periódico Digital - Brasil 2014">');
+    $('.logo').find('a').html('<img src="'+themeURL+'/img/logo-s.jpg" alt="Periódico Digital - Brasil 2014"><a href="http://www.periodicodigital.mx/">Periódico Digital</a>');
 })
 
 /**
@@ -22,7 +22,7 @@ enquire
     */
     $('.navegacion').css('display','inline');
     /*añadir solución local*/
-    $('.logo').find('a').html('<img src="'+themeURL+'/img/logo.jpg" alt="Periódico Digital - Brasil 2014">');
+    $('.logo').find('a').html('<img src="'+themeURL+'/img/logo.jpg" alt="Periódico Digital - Brasil 2014"><a href="http://www.periodicodigital.mx/">Periódico Digital</a>');
 })
 
 /**

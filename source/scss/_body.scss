@@ -34,6 +34,19 @@ ul{
 	}
 }
 
+/* LINK A PERIODICODIGITAL */
+.logo > a {
+	position: relative;
+	a {
+		position: absolute;
+		text-indent: -9999px;
+
+		width: 48%;
+		margin: 33% 0 0 -73%;
+		padding: 5px 0;
+	}
+}
+
 .contenedor{
   width: 100%;
   max-width: 1024px;
